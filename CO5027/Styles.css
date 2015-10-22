@@ -4,9 +4,13 @@
 	margin: 0 auto;
 }
 
+#logo{
+	margin-top: 20px;
+}
+
 #nav{
 	padding-bottom: 5px;
-    margin-top: 80px;
+    margin-top: 30px;
 	border-style: #F17877;
 	background-color: #F17877;
 	}
@@ -32,3 +36,4 @@
 #nav ul li a:hover {
 	color: black;
 }
+

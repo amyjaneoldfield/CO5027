@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <div id="logo"><img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" /></div>
     <div id="nav"><ul>
         <li><a href="~/Default.aspx" runat="server">Home</a></li>
         <li><a href="~/Face.aspx" runat="server">Face</a></li>
