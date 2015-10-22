@@ -4,8 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <div id="nav"><ul>
+        <li><a href="~/Default.aspx" runat="server">Home</a></li>
+        <li><a href="~/Face.aspx" runat="server">Face</a></li>
+        <li><a href="~/Eyes.aspx" runat="server">Eyes</a></li>
+        <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
+        <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
+    </ul></div>
     <title></title>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 <body>
