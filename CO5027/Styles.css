@@ -5,6 +5,8 @@
 
 body{
     background-color: white;
+    color: white;
+	font-family: "Lucida Console", Monospace;
 }
 
 .box{
@@ -38,8 +40,6 @@ body{
 }
 
 .container-1 .icon{
-
- 
   z-index: 1;
   color: #F17877;
 }
@@ -52,8 +52,6 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 #logo{
 	margin-top: 20px;
 }
-
-
 
 #nav{
 	padding-bottom: 5px;
@@ -84,3 +82,8 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 	color: black;
 }
 
+footer{
+width: auto;
+height: 250px;
+background-color: #F17877;
+}

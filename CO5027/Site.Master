@@ -7,7 +7,8 @@
     <link href="Styles.css" rel="stylesheet" type="text/css" />
     <div id="main">
      <div id="logo"><img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" /></div>
-    <div class="box">
+   
+         <div class="box">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
       <input type="search" id="search" placeholder="Search..." />
@@ -20,7 +21,7 @@
         <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
         <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
     </ul></div>
-    <div></div>
+    </div>
 
      
     <title></title>
@@ -33,12 +34,22 @@
     <form id="form1" runat="server">
         <div id="main">
             
-   
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+            
+
+        
+    <footer>
+                <h3>Stay Connected</h3>
+        <a class="twitter" href="https://twitter.com/BenefitUK">
+        <img src="Images/twitter.png" alt="Twitter logo" width="30" height="30" /></a>
+        <a class="facebook" href="https://www.facebook.com/benefitcosmetics">
+        <img src="Images/facebook.jpg" alt="Facebook logo" width="30" height="30" />
+
+            </footer>
+
         </div>
-    </div>
     </form>
     
 </body>
