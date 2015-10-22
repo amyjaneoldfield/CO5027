@@ -3,3 +3,32 @@
     width: 960px;
 	margin: 0 auto;
 }
+
+#nav{
+	padding-bottom: 5px;
+    margin-top: 80px;
+	border-style: #F17877;
+	background-color: #F17877;
+	}
+
+#nav ul {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+}
+
+#nav ul li {
+	display: inline;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	padding: 0.2em 1em;
+	color: white;
+	font-family: "Lucida Console", Monospace;	
+}
+
+#nav ul li a:hover {
+	color: black;
+}
