@@ -1,4 +1,4 @@
-﻿#main{
+﻿.main{
     width: 960px;
 	margin: 0 auto;
 }
@@ -84,7 +84,6 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
     
 }
 
-
 footer{
 width: auto;
 height: 250px;
@@ -100,6 +99,7 @@ margin-top: 500px;
     margin-left: 25px;
     
 }
+
 div.social {
     float: left;
     margin-top: 15px;
@@ -110,9 +110,8 @@ a.social{
     margin-right: 15px;
 }
 
-
 div.subscribe{
-   margin-left: 300px;
+   float: right;
    margin-top: 15px;
 }
 
@@ -139,13 +138,29 @@ div.subscribe{
  
 }
 
-
-.titles{
-    display: inline;
-}
-
 .links ul li a:hover {
     
 	color: black;
     
+}
+
+table{
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 10px;
+    
+}
+
+.btnCart{
+    background:transparent url(/logo.png) no-repeat left;
+    border:0;
+    float: right;
+    padding-right: 32px;
+    
+  
 }

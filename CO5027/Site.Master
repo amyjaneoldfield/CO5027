@@ -5,9 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link href="Styles.css" rel="stylesheet" type="text/css" />
-    <div id="main">
-     <div id="logo"><img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" /></div>
+    <div class="main">
+
+    <img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" />
    
+        <button class ="btnCart">£0.00 <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32"/> </button>
+
          <div class="box">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
@@ -18,13 +21,8 @@
    
     <div id="nav"><ul>
         <li><a href="~/Default.aspx" runat="server">Home</a></li>
-        <li><a href="~/Face.aspx" runat="server">Face</a></li>
-        <li><a href="~/Eyes.aspx" runat="server">Eyes</a></li>
-        <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
         <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
-        
-        <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li></>
-    </ul></div>
+        <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li></ul></div>
     </div>
 
      
@@ -36,7 +34,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="main">
+        <div class="main">
             
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
@@ -80,8 +78,8 @@
 </div>
 -->
         <div class="links">
-        <table style="width:100%">
-  
+      
+  <table>
   <tr>
     <th>Help & Support</th>
     <th>My Account</th>
@@ -92,7 +90,7 @@
     <td><ul><li><a href="~/history.aspx" runat="server">Order History</a>
 
 </li></ul><ul>
-<li><a href="~/ShoppingBag.aspx" runat="server">Shopping Cart</a></li></ul>
+<li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li></ul>
         <ul><li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li></ul>
 
     </td>
@@ -102,6 +100,7 @@
     
   </tr>
 </table></div>
+        <p id="copyright">Copyright reserved.</p>
             </div></footer>
 
         </div>
