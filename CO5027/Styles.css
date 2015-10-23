@@ -5,7 +5,7 @@
 
 body{
     background-color: white;
-    color: white;
+    color: #F17877;
 	font-family: "Lucida Console", Monospace;
     
 }
@@ -162,3 +162,4 @@ table{
     padding-right: 32px;
     color: #F17877;
 }
+

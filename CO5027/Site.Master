@@ -77,16 +77,11 @@
 </li></ul><ul>
 <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li></ul>
         <ul><li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li></ul>
-
     </td>
   </tr>
   <tr>
-    
-    
   </tr>
 </table></div>
-
-
         <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" />
         <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" />
         <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" />
