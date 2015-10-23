@@ -45,6 +45,7 @@
 
         
     <footer><div id="foot">
+        
         <div class="social">
                 <h2>Stay Connected</h2>
         <a class="twitter" href="https://twitter.com/BenefitUK">
@@ -53,17 +54,54 @@
         <img src="Images/facebook.png" alt="Facebook logo" width="32" height="32" /></a>
         <a class="instagram" href="https://instagram.com/benefitcosmeticsuk/">
         <img src="Images/instagram.png" alt="Facebook logo" width="32" height="32" /></a>
-            
-        <div class="subscribe">
+           
 
+        <div class="subscribe">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
       <input type="search" id="txtOffers" placeholder="Enter your email for offers..." style="color: #F17877" />
       <asp:Button ID="btnSubmit" runat="server" Text="Submit" ForeColor="#F17877" /> </div>
-
-        </div>
         </div>
 
+  </div>
+     <!-- 
+        <div class="links">
+            <h3 class="titles">Help & Support</h3>
+           <ul><li><a href="~/contact.aspx" runat="server">Contact us</a></li>
+        </ul>
+        
+        </div>
+        <div class="links"> 
+            <h3 class="titles">My Account</h3>
+        
+        <div class="links">
+           <ul><li><a href="~/history.aspx" runat="server">Order History</a></li>
+        <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Cart</a></li></ul>
+</div>
+-->
+        <div class="links">
+        <table style="width:100%">
+  
+  <tr>
+    <th>Help & Support</th>
+    <th>My Account</th>
+  </tr>
+  <tr>
+    <td><ul><li><a href="~/contact.aspx" runat="server">Contact us</a></li>
+        </ul></td>
+    <td><ul><li><a href="~/history.aspx" runat="server">Order History</a>
+
+</li></ul><ul>
+<li><a href="~/ShoppingBag.aspx" runat="server">Shopping Cart</a></li></ul>
+        <ul><li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li></ul>
+
+    </td>
+  </tr>
+  <tr>
+    
+    
+  </tr>
+</table></div>
             </div></footer>
 
         </div>

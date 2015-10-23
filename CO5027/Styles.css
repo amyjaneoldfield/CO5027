@@ -7,6 +7,7 @@ body{
     background-color: white;
     color: white;
 	font-family: "Lucida Console", Monospace;
+    
 }
 
 .box{
@@ -89,17 +90,20 @@ width: auto;
 height: 250px;
 background-color: #F17877;
 margin-top: 500px;
+
 }
 
 #foot{
-    width: 1000px;
+    width: auto;
     height: 100%;
     margin-top: 25px;
     margin-left: 25px;
+    
 }
 div.social {
     float: left;
     margin-top: 15px;
+   
 }
 
 a.social{
@@ -110,4 +114,38 @@ a.social{
 div.subscribe{
    margin-left: 300px;
    margin-top: 15px;
+}
+
+.links{
+    
+    font-size: 13px;
+   width: 500px;
+   margin-right: 15px;
+   display: inline-block;
+
+}
+
+.links ul li a {
+	text-decoration: none;
+	padding: 0.2em 1em;
+	color: white;
+	font-family: "Lucida Console", Monospace;	
+    
+}
+
+.links li{
+    list-style: none;
+    padding: 0;
+ 
+}
+
+
+.titles{
+    display: inline;
+}
+
+.links ul li a:hover {
+    
+	color: black;
+    
 }
