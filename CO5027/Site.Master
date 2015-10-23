@@ -12,7 +12,9 @@
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
       <input type="search" id="search" placeholder="Search..." />
-  </div></div>
+  </div>
+
+         </div>
    
     <div id="nav"><ul>
         <li><a href="~/Default.aspx" runat="server">Home</a></li>
@@ -20,6 +22,8 @@
         <li><a href="~/Eyes.aspx" runat="server">Eyes</a></li>
         <li><a href="~/Contact.aspx" runat="server">Contact</a></li>
         <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
+        
+        <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li></>
     </ul></div>
     </div>
 
@@ -40,14 +44,27 @@
             
 
         
-    <footer>
-                <h3>Stay Connected</h3>
+    <footer><div id="foot">
+        <div class="social">
+                <h2>Stay Connected</h2>
         <a class="twitter" href="https://twitter.com/BenefitUK">
-        <img src="Images/twitter.png" alt="Twitter logo" width="30" height="30" /></a>
+        <img src="Images/twitter.png" alt="Twitter logo" width="32" height="32" /></a>
         <a class="facebook" href="https://www.facebook.com/benefitcosmetics">
-        <img src="Images/facebook.jpg" alt="Facebook logo" width="30" height="30" />
+        <img src="Images/facebook.png" alt="Facebook logo" width="32" height="32" /></a>
+        <a class="instagram" href="https://instagram.com/benefitcosmeticsuk/">
+        <img src="Images/instagram.png" alt="Facebook logo" width="32" height="32" /></a>
+            
+        <div class="subscribe">
 
-            </footer>
+  <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="txtOffers" placeholder="Enter your email for offers..." style="color: #F17877" />
+      <asp:Button ID="btnSubmit" runat="server" Text="Submit" ForeColor="#F17877" /> </div>
+
+        </div>
+        </div>
+
+            </div></footer>
 
         </div>
     </form>

@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\instagram.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="packages.config" />
