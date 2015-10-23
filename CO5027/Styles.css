@@ -6,7 +6,7 @@
 body{
     background-color: white;
     color: #F17877;
-	font-family: "Lucida Console", Monospace;
+	font-family:  "Varela", sans-serif;
     
 }
 
@@ -75,8 +75,7 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 	text-decoration: none;
 	padding: 0.2em 1em;
 	color: white;
-	font-family: "Lucida Console", Monospace;	
-    
+	font-family: "Varela", sans-serif;
 }
 
 #nav ul li a:hover {
