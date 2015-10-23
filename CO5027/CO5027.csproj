@@ -67,12 +67,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Images\bag.png" />
     <Content Include="Images\cart.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\instagram.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\paypal.png" />
     <Content Include="Images\twitter.png" />
+    <Content Include="Images\visa.png" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">

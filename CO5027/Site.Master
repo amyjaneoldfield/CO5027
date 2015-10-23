@@ -100,6 +100,14 @@
     
   </tr>
 </table></div>
+
+
+        <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" />
+        <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" />
+        <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" />
+            
+
+
         <p id="copyright">Copyright reserved.</p>
             </div></footer>
 
