@@ -55,7 +55,7 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }
 
 #nav{
-	padding-bottom: 5px;
+	padding-bottom: 10px;
     margin-top: 30px;
     background-color: #F17877;
 	}
@@ -81,7 +81,6 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 
 #nav ul li a:hover {
 	color: black;
-    
 }
 
 footer{
@@ -157,8 +156,9 @@ table{
 }
 
 .btnCart{
-    background:transparent url(/logo.png) no-repeat left;
+    background:transparent;
     border:0;
     float: right;
     padding-right: 32px;
+    color: #F17877;
 }
