@@ -71,7 +71,7 @@
     <th>My Account</th>
   </tr>
   <tr>
-    <td><ul><li><a href="~/contact.aspx" runat="server">Contact us</a></li>
+    <td><ul><li><a href="~/Contact.aspx" runat="server">Contact us</a></li>
         </ul></td>
     <td><ul><li><a href="~/history.aspx" runat="server">Order History</a>
 
