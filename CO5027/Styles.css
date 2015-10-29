@@ -178,14 +178,7 @@ table{
 
 @keyframes slidy {
 0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+50% { left: -100%; }
 }
 
 body { margin: 320px, 960px; } 
@@ -197,5 +190,21 @@ div#slider figure {
   margin: 0;
   left: 0;
   text-align: left;
-  animation: 30s slidy infinite; 
+  animation: 40s slidy infinite; 
+}
+
+#email{
+    border: 1px solid #F17877;
+    width: 200px;
+    float: left;
+}
+
+#contact{
+    border: 1px solid #F17877;
+    width: 200px;
+    float: right;
+}
+
+#location{
+    text-align: center
 }
