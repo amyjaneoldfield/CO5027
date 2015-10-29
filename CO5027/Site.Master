@@ -19,11 +19,12 @@
   </div>
 
          </div>
-  
+
+        
     <div id="nav"><ul>
         <li><a href="~/Default.aspx" runat="server">Home</a></li>
         <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
-        </ul></div>
+        </ul></div> 
     </div>
 
      
@@ -61,8 +62,36 @@
       <input type="search" id="txtOffers" placeholder="Enter your email for offers..." style="color: #F17877" />
       <asp:Button ID="btnSubmit" runat="server" Text="Submit" ForeColor="#F17877" /> </div>
         </div>
-
   </div>
+
+        <div id="links">
+
+            <div id="help">
+            <div id="HelpHeading">
+                <h3>Help & Support</h3>
+            </div>
+            <div id="HelpLinks">
+                <ul>
+                    <li><a href="~/Contact.aspx" runat="server">Contact us</a></li>
+                    <li><a href="~/Admin.aspx" runat="server">Admin Control</a></li>
+                </ul>
+            </div></div>
+        
+            <div id="Account">
+                <div id="MyAccount">
+                <h3>My Account</h3>
+            </div>
+            <div id="AccountLinks">
+                <ul>
+              <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li>
+              <li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li></ul>
+            </div>
+            </div>
+        
+        </div>
+  
+
+        <!--
         <div class="links">
       
   <table>
@@ -82,7 +111,7 @@
   </tr>
   <tr>
   </tr>
-</table></div>
+</table></div> -->
         <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" />
         <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" />
         <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" />

@@ -205,6 +205,69 @@ div#slider figure {
     float: right;
 }
 
-#location{
-    text-align: center
+#location {
+    text-align: center;
+}
+
+#links{
+    float: right;
+    
+    display: inline;
+}
+
+#help{
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 15px;
+   /*margin-right: 350px; */
+}
+
+#HelpHeading{
+    
+}
+
+#HelpLinks ul, li, a{
+text-decoration: none;
+color: white;
+font-family: "Varela", sans-serif;
+font-size: 12px;
+}
+
+    #HelpLinks ul li a:hover {
+        color: black;
+    }
+#HelpLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#Account{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 25px;
+    
+}
+
+#MyAccount{
+    display: inline;
+   
+}
+
+#AccountLinks ul, li, a{
+text-decoration: none;
+color: white;
+font-family: "Varela", sans-serif;
+}
+
+#AccountLinks ul li a:hover {
+        color: black;
+    }
+
+#AccountLinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
 }
