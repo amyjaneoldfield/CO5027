@@ -271,3 +271,8 @@ font-family: "Varela", sans-serif;
     padding: 0;
     
 }
+
+#BottomFooter{
+    text-align: center;
+    margin-top: 150px;
+}
