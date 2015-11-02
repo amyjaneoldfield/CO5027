@@ -68,12 +68,14 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Eye.aspx" />
     <Content Include="Face.aspx" />
     <Content Include="Gift.aspx" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner2.png" />
     <Content Include="Images\bigeasy.jpe" />
     <Content Include="Images\bronze.jpg" />
+    <Content Include="Images\brow.png" />
     <Content Include="Images\cart.jpg" />
     <Content Include="Images\complexion.jpg" />
     <Content Include="Images\facebook.png" />
@@ -83,12 +85,16 @@
     <Content Include="Images\gorg.JPG" />
     <Content Include="Images\hoola.jpg" />
     <Content Include="Images\instagram.png" />
+    <Content Include="Images\lash.jpg" />
+    <Content Include="Images\liner.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\map.png" />
     <Content Include="Images\mastercard.png" />
     <Content Include="Images\new.jpg" />
     <Content Include="Images\party.png" />
     <Content Include="Images\paypal.png" />
+    <Content Include="Images\real.jpg" />
+    <Content Include="Images\roller.jpe" />
     <Content Include="Images\style.jpg" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\visa.png" />
@@ -122,6 +128,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Eye.aspx.cs">
+      <DependentUpon>Eye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eye.aspx.designer.cs">
+      <DependentUpon>Eye.aspx</DependentUpon>
     </Compile>
     <Compile Include="Face.aspx.cs">
       <DependentUpon>Face.aspx</DependentUpon>

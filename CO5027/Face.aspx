@@ -78,7 +78,5 @@
             <asp:Button ID="btnWatts" runat="server" ForeColor="#F17877" Text="Purchase" />
         </p>
     </div>
-    <br />
-    <br />
-
+   
 </asp:Content>
