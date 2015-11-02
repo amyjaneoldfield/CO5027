@@ -3,12 +3,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<h2>Welcome</h2>  
+    <h2>Welcome</h2>  
     <p>Sign in to your current account or create a new one if this is your first time visiting below!</p>
     
     <div id="login"> 
     <h3>Returning Customer</h3>
-    <h4>LogiLogin below:</h4>
+    <h4>Login below:</h4>
 
     <p>
         <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email:"></asp:Label>
@@ -28,7 +28,7 @@
 
     <div id="signup">
     <h3>New Customer</h3>
-    <h4>Sign up below:>
+    <h4>Sign up below:</h4>
     <p>
         <asp:Label ID="lblFirstname" runat="server" AssociatedControlID="txtFirstName" Text="First Name:"></asp:Label>
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>

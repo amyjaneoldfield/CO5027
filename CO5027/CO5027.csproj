@@ -72,11 +72,14 @@
     <Content Include="Images\banner2.png" />
     <Content Include="Images\cart.jpg" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\fav.jpg" />
     <Content Include="Images\instagram.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\map.png" />
     <Content Include="Images\mastercard.png" />
+    <Content Include="Images\new.jpg" />
     <Content Include="Images\paypal.png" />
+    <Content Include="Images\style.jpg" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\visa.png" />
     <Content Include="Login.aspx" />
