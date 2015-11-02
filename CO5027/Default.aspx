@@ -17,12 +17,11 @@
 </div>
     <br />
     <br />
-   <div id="AdImages">
+  
        <img src="Images/style.jpg" height="300" width="300" alt="Style image displaying products" />
        <img src="Images/new.jpg" height="300" width="300" alt="Image displaying mascaras" />
        <img src="Images/fav.jpg" height="300" width="300" alt="Image displaying various products" />
 
-   </div>
-
+    
 
 </asp:Content>

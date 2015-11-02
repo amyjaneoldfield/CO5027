@@ -68,9 +68,12 @@
   <ItemGroup>
     <Content Include="Contact.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Gift.aspx" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner2.png" />
+    <Content Include="Images\bronze.jpg" />
     <Content Include="Images\cart.jpg" />
+    <Content Include="Images\complexion.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\fav.jpg" />
     <Content Include="Images\instagram.png" />
@@ -78,6 +81,7 @@
     <Content Include="Images\map.png" />
     <Content Include="Images\mastercard.png" />
     <Content Include="Images\new.jpg" />
+    <Content Include="Images\party.png" />
     <Content Include="Images\paypal.png" />
     <Content Include="Images\style.jpg" />
     <Content Include="Images\twitter.png" />
@@ -111,6 +115,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gift.aspx.cs">
+      <DependentUpon>Gift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gift.aspx.designer.cs">
+      <DependentUpon>Gift.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
