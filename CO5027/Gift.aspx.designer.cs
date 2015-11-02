@@ -13,6 +13,24 @@ namespace CO5027 {
     public partial class Gift {
         
         /// <summary>
+        /// lblSort control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSort;
+        
+        /// <summary>
+        /// dlistSort control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dlistSort;
+        
+        /// <summary>
         /// btnPumpPurchase control.
         /// </summary>
         /// <remarks>

@@ -7,7 +7,14 @@
     <p>
         Grab them cheap while stock lasts, limited availability.</p>
     <p>
-        &nbsp;</p>
+        <asp:Label ID="lblSort" runat="server" AssociatedControlID="dlistSort" Text="Sort:"></asp:Label>
+        <asp:DropDownList ID="dlistSort" runat="server" ForeColor="#F17877">
+            <asp:ListItem>Most popular</asp:ListItem>
+            <asp:ListItem>Newest</asp:ListItem>
+            <asp:ListItem>Price ACS</asp:ListItem>
+            <asp:ListItem>Price DSC</asp:ListItem>
+        </asp:DropDownList>
+    </p>
 
     
     <div id="party">
