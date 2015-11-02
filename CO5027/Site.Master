@@ -22,8 +22,11 @@
 
         
     <div id="nav"><ul>
-        <li><a href="~/Default.aspx" runat="server">Home</a></li>
-        <li><a href="~/Login.aspx" runat="server">Login / Register</a></li> 
+        <li><a href="~/Default.aspx" runat="server">Home</a></li> 
+        <li><a href="~/Face.aspx" runat="server">Face Makeup</a></li>
+        <li><a href="~/Eye.aspx" runat="server">Eye Makeup</a></li>
+        <li><a href="~/Gift.aspx" runat="server">Gift Sets</a></li>
+        <li><a href="~/Login.aspx" runat="server">Login / Register</a></li>
         </ul></div> 
     </div>
 

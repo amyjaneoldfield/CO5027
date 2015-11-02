@@ -8,7 +8,7 @@
     
     <div id="login"> 
     <h3>Returning Customer</h3>
-    <h4>Login below:</h4>
+    <h4>LogiLogin below:</h4>
 
     <p>
         <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email:"></asp:Label>
@@ -20,7 +20,6 @@
     </p>
     <p>
         <asp:CheckBox ID="chkRemember" runat="server" Font-Size="13px" Text="Remember me" />
-        ++<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </p>
     <p>
         <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" />
@@ -29,7 +28,7 @@
 
     <div id="signup">
     <h3>New Customer</h3>
-    <h4>Sign up below:</h4>
+    <h4>Sign up below:>
     <p>
         <asp:Label ID="lblFirstname" runat="server" AssociatedControlID="txtFirstName" Text="First Name:"></asp:Label>
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
