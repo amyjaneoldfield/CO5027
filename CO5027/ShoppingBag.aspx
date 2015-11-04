@@ -15,14 +15,15 @@
             <input id="txtDelAdd" type="text" /></p>
         <p>
             <asp:Label ID="lblDelAdd1" runat="server" Text="Addresss line 2:"></asp:Label>
+            &nbsp;
             <input id="txtDelAdd2" type="text" /></p>
         <p>
             <asp:Label ID="lblDelTown" runat="server" Text="Town:"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input id="txtDelTown" type="text" /></p>
         <p>
             <asp:Label ID="lblDelPostcode" runat="server" Text="Postcode:"></asp:Label>
-            *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            *&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input id="txtDelPostcode" type="text" /></p>
         <p>
             <asp:Label ID="lblDelCity" runat="server" Text="City:"></asp:Label>

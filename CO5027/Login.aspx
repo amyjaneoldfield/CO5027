@@ -13,11 +13,12 @@
     <p>
         &nbsp;
         <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email:"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" ForeColor="#F17877"></asp:TextBox>
+        &nbsp;<asp:TextBox ID="txtEmail" runat="server" ForeColor="#F17877"></asp:TextBox>
     </p>
     <p>
         &nbsp;
         <asp:Label ID="lblPassword" runat="server" AssociatedControlID="txtPassword" Text="Password:"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtPassword" runat="server" ForeColor="#F17877"></asp:TextBox>
     </p>
     <p>
@@ -41,7 +42,7 @@
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblLastName" runat="server" AssociatedControlID="txtLastName" Text="Last Name:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
     </p>
     <p>
@@ -53,7 +54,7 @@
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblPassSign" runat="server" AssociatedControlID="txtPassSign" Text="Password:"></asp:Label>
-        &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtPassSign" runat="server"></asp:TextBox>
     </p>
     <p>
