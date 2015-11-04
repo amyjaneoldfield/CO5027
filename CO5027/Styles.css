@@ -231,7 +231,18 @@ display: inline-block;
     height: 450px;
     margin-right: 20px;
 }
+
+/*CSS FOR Shopping Bag delivery*/
+
+#posting{
+    float: right;
+}
+
+
 /*CSS FOR Footer and footer elements*/
+
+
+
 footer{
 width: auto;
 height: 250px;

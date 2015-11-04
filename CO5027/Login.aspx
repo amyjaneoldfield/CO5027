@@ -35,7 +35,7 @@
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblFirstname" runat="server" AssociatedControlID="txtFirstName" Text="First Name:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
     </p>
     <p>
@@ -47,19 +47,19 @@
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblEmailSingup" runat="server" AssociatedControlID="txtEmailSingup" Text="Email:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtEmailSingup" runat="server" style="margin-left: 0px"></asp:TextBox>
     </p>
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblPassSign" runat="server" AssociatedControlID="txtPassSign" Text="Password:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtPassSign" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;&nbsp;
         <asp:Label ID="lblConfPass" runat="server" AssociatedControlID="txtConfPass" Text="Confirm Password:"></asp:Label>
-        &nbsp;<asp:TextBox ID="txtConfPass" runat="server"></asp:TextBox>
+        *&nbsp;<asp:TextBox ID="txtConfPass" runat="server"></asp:TextBox>
     </p>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
