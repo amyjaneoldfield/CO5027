@@ -94,15 +94,24 @@
             </div>
         
         </div>
-  
+
         <br />
+
+          
 
         <div id="BottomFooter">
         <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" />
         <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" />
         <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" />
         <p>Copyright reserved.</p></div>
-            </div></footer>
+
+        <div id="Validate">
+        <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+        <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
+            </div>
+        </div>
+        </footer>
 
         </div>
     </form>

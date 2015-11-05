@@ -62,6 +62,7 @@
             <asp:Button ID="btnAdminAdd" runat="server" ForeColor="#F17877" Text="Add" />
         </p>
         </div>
+
 <br />
 <br />
 <br />
@@ -70,13 +71,14 @@
 <br />
 <br />
 <br />
+    <br />
 <br />
 <br />
 <br />
 <br />
+    <br />
 <br />
 <br />
 <br />
-<br />
-<br />
+
 </asp:Content>
