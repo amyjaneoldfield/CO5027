@@ -239,6 +239,15 @@ display: inline-block;
 }
 
 
+/*CSS For Admin page*/
+
+#adminTable{
+    width: 500px;
+}
+#adminTable th{
+    border: 1px solid #F17877;
+}
+
 /*CSS FOR Footer and footer elements*/
 
 

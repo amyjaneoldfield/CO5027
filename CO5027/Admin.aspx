@@ -4,21 +4,27 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h3>Welcome back admin user!</h3>
 
+    <p>View the current list of products below which are linked
+        to the <br />current database system.</p>
     <div id="adminTable">
     <table>
+        <caption>Products table</caption>
         <tr>
-            <td>ID</td>
-            <td>Product</td>
-            <td>Price</td>
-            <td>QTY Available</td>
-            <td>Action</td>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>QTY Available</th>
+            <th>Action</th>
         </tr>
         <tr>
             <td>1</td>
             <td>Roller Lash Mascara</td>
             <td>£16</td>
             <td>12</td>
-            <td>Edit Delete</td>
+            <td>
+                <asp:Button ID="btnEditAdmin" runat="server" ForeColor="#F17877" Text="Edit" />
+                <asp:Button ID="btnAdminDelete" runat="server" ForeColor="#F17877" Text="Delete" />
+            </td>
         </tr>
 
         <tr>
@@ -26,7 +32,12 @@
             <td>Gimmie Brow</td>
             <td>£12</td>
             <td>7</td>
-            <td>Edit Delete</td>
+            <td>
+                <asp:Button ID="btnAdminEdit1" runat="server" ForeColor="#F17877" Text="Edit" />
+                <asp:Button ID="btnAdminDelete1" runat="server" ForeColor="#F17877" Text="Delete" />
+            </td>
         </tr>
-    </table></div>
+    </table>
+        <br />
+    </div>
 </asp:Content>
