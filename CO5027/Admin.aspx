@@ -40,4 +40,20 @@
     </table>
         <br />
     </div>
+
+    <div id="adminAdd">
+    <h2>Add Products:</h2>
+    <p>Add products to the system and watch the table update on the left hand side.</p>
+        <p>
+            <asp:Label ID="lblAdminProduct" runat="server" Text="Product:"></asp:Label>
+            <input id="txtAdminProduct" type="text" /></p>
+        </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 </asp:Content>

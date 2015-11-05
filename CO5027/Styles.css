@@ -243,9 +243,17 @@ display: inline-block;
 
 #adminTable{
     width: 500px;
+    float: left;
 }
 #adminTable th{
     border: 1px solid #F17877;
+}
+
+#adminAdd{
+    float: right;
+    display:inline-block;
+    width: 300px;
+    
 }
 
 /*CSS FOR Footer and footer elements*/
