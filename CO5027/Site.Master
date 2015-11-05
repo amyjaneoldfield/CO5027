@@ -12,9 +12,6 @@
 
         
         <a href="ShoppingBag.aspx" class="button">£0.00  <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/></a>
-   <!--     <button class ="btnCart">£0.00 <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/> 
-
-        </button> -->
 
          <div class="box">
   <div class="container-1">

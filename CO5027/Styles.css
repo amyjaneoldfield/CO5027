@@ -85,6 +85,24 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }/*Responsive when mouse hover over*/
  /*END OF NAV BAR CSS*/
 
+ /*CSS FOR Home page slider animation*/
+@keyframes slidy {
+0% { left: 0%; }
+50% { left: -100%; }
+}/*settings*/
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; } /*Size*/
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 40s slidy infinite; 
+}/*Size / speed*/
+
+
 .button{
     background:transparent;
     border:0;
@@ -106,7 +124,6 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }
 
 #complexion{
-    
     display: inline-block;
     text-align: center;
     border: 1px solid #F17877;
@@ -129,9 +146,8 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }
 
 /*CSS FOR Face page*/
-
 #foundation{
-display: inline-block;
+    display: inline-block;
     text-align: center;
     border: 1px solid #F17877;
     width: 300px; 
@@ -213,7 +229,6 @@ display: inline-block;
     margin-right: 20px;
 }
 
-
 /*CSS FOR Eye row two*/
 
 #lash{
@@ -249,13 +264,13 @@ display: inline-block;
     float: right;
 }
 
-
 /*CSS For Admin page*/
 
 #adminTable{
     width: 500px;
     float: left;
 }
+
 #adminTable th{
     border: 1px solid #F17877;
 }
@@ -267,9 +282,38 @@ display: inline-block;
     
 }
 
+/*CSS FOR LOGIN PAGE*/
+#login{
+    border: 1px solid #F17877;
+    width: 200px;
+    float: right;
+} /*For users to login*/
+
+#signup{
+    border: 1px solid #F17877;
+    width: 400px;
+    float: left;
+}/*For users to signup*/
+
+ /*CSS For Contact page*/
+#email{
+    border: 1px solid #F17877;
+    width: 200px;
+    float: left;
+}/*For conact forms*/
+
+#contact{
+    width: 200px;
+    float: right;
+} /*For Address/telephone on contact page to position*/
+
+#location {
+    text-align: center;
+} /*for map image*/
+/*end of contact page*/
+
+
 /*CSS FOR Footer and footer elements*/
-
-
 
 footer{
 width: auto;
@@ -297,7 +341,7 @@ div.social {
 a.social{
     margin-right: 15px;
 }
-
+/*Social title / images links*/
 div.subscribe{
    float: right;
    margin-top: 15px;
@@ -305,12 +349,12 @@ div.subscribe{
 
 .links{
     
-    font-size: 13px;
+   font-size: 13px;
    width: 500px;
    margin-right: 15px;
    display: inline-block;
 
-}
+} /*For headings*/
 
 .links ul li a {
 	text-decoration: none;
@@ -326,99 +370,28 @@ div.subscribe{
  
 }
 
-.links ul li a:hover {
-    
+.links ul li a:hover {    
 	color: black;
-    
 }
-
-table{
-    width: 100%;
-    margin-top: 35px;
-    margin-left: 15px;
-}
-
-
-
-/*.btnCart{
-    background:transparent;
-    border:0;
-    float: right;
-    padding-right: 32px;
-    color: #F17877;
-}*/
-
-#login{
-    border: 1px solid #F17877;
-    width: 200px;
-    float: right;
-
-}
-
-#signup{
-    border: 1px solid #F17877;
-    width: 400px;
-    float: left;
-}
-
-@keyframes slidy {
-0% { left: 0%; }
-50% { left: -100%; }
-}
-
-body { margin: 320px, 960px; } 
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  animation: 40s slidy infinite; 
-}
-
-/*CSS For Contact page*/
-#email{
-    border: 1px solid #F17877;
-    width: 200px;
-    float: left;
-}/*For conact forms*/
-
-#contact{
-    width: 200px;
-    float: right;
-} /*For Address/telephone on contact page to position*/
-
-#location {
-    text-align: center;
-} /*for map image*/
-/*end of contact page*/
-
 
 #links{
     float: right;
-    
     display: inline;
 }
 
+/*CSS for help links under heading*/
 #help{
     display: inline-block;
     margin-right: 80px;
-    margin-top: 15px;
-   /*margin-right: 350px; */
-}
-
-#HelpHeading{
-    
-}
+    margin-top: 15px; 
+}/*position*/
 
 #HelpLinks ul, li, a{
 text-decoration: none;
 color: white;
 font-family: "Varela", sans-serif;
 font-size: 12px;
-}
+}/*styling*/
 
     #HelpLinks ul li a:hover {
         color: black;
@@ -429,24 +402,22 @@ font-size: 12px;
     padding: 0;
     
 }
-
+/*CSS for my account heading & links*/
 #Account{
     display: inline-block;
     margin-right: 50px;
-    margin-top: 25px;
-    
-}
+    margin-top: 25px; 
+}/*Position*/
 
 #MyAccount{
-    display: inline;
-   
+    display: inline;  
 }
 
 #AccountLinks ul, li, a{
 text-decoration: none;
 color: white;
 font-family: "Varela", sans-serif;
-}
+}/*style*/
 
 #AccountLinks ul li a:hover {
         color: black;
@@ -456,7 +427,6 @@ font-family: "Varela", sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
 }
 
 #BottomFooter{
