@@ -83,6 +83,16 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 	color: black;
 }
 
+
+.button{
+    background:transparent;
+    border:0;
+    float: right;
+    padding-right: 32px;
+    color: #F17877;
+    
+} /*For cart button at top right page*/
+
 /*ALL CSS FOR Gift Page*/
 
 #party{
@@ -333,13 +343,13 @@ table{
     
 }
 
-.btnCart{
+/*.btnCart{
     background:transparent;
     border:0;
     float: right;
     padding-right: 32px;
     color: #F17877;
-}
+}*/
 
 #login{
     border: 1px solid #F17877;
