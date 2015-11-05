@@ -1,21 +1,21 @@
 ﻿.main{
     width: 960px;
 	margin: 0 auto;
-}
+}/*set for whole page*/
 
 body{
     background-color: white;
     color: #F17877;
-	font-family:  "Varela", sans-serif;
-    
-}
+	font-family:  "Varela", sans-serif; 
+}/*for whole page*/
 
+ /*ALL of below for search box doesnt work yet*/
 .box{
   margin-left: 755px;
   margin-top: 5px;
   width: 100px;
   height: 10px;
-}
+}/*measurements for search box*/
 
 .container-1{
   vertical-align: middle;
@@ -49,40 +49,41 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
     outline:none;
     background: #F17877;
   }
+/*Search box end*/
 
 #logo{
 	margin-top: 20px;
-}
+}/*Position image logo*/
 
+ /*START OF CSS FOR nav bar menu*/
 #nav{
 	padding-bottom: 10px;
     margin-top: 30px;
     background-color: #F17877;
-   
-	}
+	}/*Measurements*/
 
 #nav ul {
     list-style-type: none;
 	margin: 0;
 	padding: 0;	
 	text-align: center;
-}
+}/*Details*/
 
 #nav ul li {
 	display: inline;
-}
+}/*Vertical*/
 
 #nav ul li a {
 	text-decoration: none;
 	padding: 0.2em 1em;
 	color: white;
 	font-family: "Varela", sans-serif;
-}
+}/*Text details*/
 
 #nav ul li a:hover {
 	color: black;
-}
-
+}/*Responsive when mouse hover over*/
+ /*END OF NAV BAR CSS*/
 
 .button{
     background:transparent;
@@ -377,21 +378,23 @@ div#slider figure {
   animation: 40s slidy infinite; 
 }
 
+/*CSS For Contact page*/
 #email{
     border: 1px solid #F17877;
     width: 200px;
     float: left;
-}
+}/*For conact forms*/
 
 #contact{
-    border: 1px solid #F17877;
     width: 200px;
     float: right;
-}
+} /*For Address/telephone on contact page to position*/
 
 #location {
     text-align: center;
-}
+} /*for map image*/
+/*end of contact page*/
+
 
 #links{
     float: right;

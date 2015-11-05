@@ -17,15 +17,19 @@
 
     <div id="email">
 <p>
+    &nbsp;&nbsp;
     <asp:Label ID="lblContactName" runat="server" AssociatedControlID="txtContactName" Text="Name:"></asp:Label>
     <asp:TextBox ID="txtContactName" runat="server"></asp:TextBox>
 </p>
 <p>
+    &nbsp;&nbsp;
     <asp:Label ID="lblContactEmail" runat="server" AssociatedControlID="txtContactEmail" Text="Email:"></asp:Label>
     <asp:TextBox ID="txtContactEmail" runat="server"></asp:TextBox>
 </p>
         <p>
+            &nbsp;&nbsp;
             <asp:Label ID="lblContactMessage" runat="server" Text="Message:"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <textarea id="txtContactMessage" cols="20" name="S1" rows="2"></textarea></p>
 <p>
     <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
