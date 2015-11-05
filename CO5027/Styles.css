@@ -337,11 +337,7 @@ table{
     margin-left: 15px;
 }
 
-#copyright{
-    text-align: center;
-    font-size: 10px;
-    
-}
+
 
 /*.btnCart{
     background:transparent;
@@ -463,4 +459,6 @@ font-family: "Varela", sans-serif;
 #BottomFooter{
     text-align: center;
     margin-top: 150px;
-}
+    font-size: 10px;
+} /*For copyright & paying images*/
+

@@ -6,7 +6,7 @@
 <head runat="server">
     <link href='http://fonts.googleapis.com/css?family=Varela|Varela+Round' rel='stylesheet' type='text/css'/>
     <link href="Styles.css" rel="stylesheet" type="text/css" />
-    <div class="main">
+   <div class="main">
 
     <img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" />
 
@@ -34,12 +34,11 @@
         </ul></div> 
     </div>
 
-     
-    <title></title>
+    <title></title> 
+    
     
     <asp:ContentPlaceHolder ID="head" runat="server">
 
-       
 
     </asp:ContentPlaceHolder>
 </head>
@@ -105,10 +104,7 @@
         <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" />
         <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" />
         <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" />
-        
-
-
-        <p id="copyright">Copyright reserved.</p></div>
+        <p>Copyright reserved.</p></div>
             </div></footer>
 
         </div>
