@@ -19,7 +19,7 @@
     
     <div id="party">
     <img src="Images/party.png" height="200" width="200" alt="Pump up the party gift set image." />
-        <br />
+        <br /><!--(Benefit Cosmetics, 2015)-->
         
         <h3>Pump Up The Party!</h3>
         <p>Get ready to rock the party with this gift set worth: £49.01*</p>
@@ -30,7 +30,7 @@
         </div>
 
     <div id="complexion">
-        <img src="Images/complexion.jpg" height="200" width="200" alt="Complexion Confections gift set" />
+        <img src="Images/complexion.jpg" height="200" width="200" alt="Complexion Confections gift set" /><!--(Benefit Cosmetics, 2015)-->
         <h3>Complexion Confections</h3>
         <p>Grab the amazing bargin to your perfect skin care collection worth: £61.35*</p>
         <div class="Offer">
@@ -39,7 +39,7 @@
     </div>
 
     <div id="bronze">
-        <img src="Images/bronze.jpg" height="200" width="200" alt="Bronze gift set image" />
+        <img src="Images/bronze.jpg" height="200" width="200" alt="Bronze gift set image" /><!--(Benefit Cosmetics, 2015)-->
         <h3>The Bronze Of Champions</h3>
         <p>Complete the perfect shimmer look for eyes, face AND cheeks with this compact set.</p>
         <div class="Offer">
