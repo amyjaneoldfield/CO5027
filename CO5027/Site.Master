@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href='http://fonts.googleapis.com/css?family=Varela|Varela+Round' rel='stylesheet' type='text/css'/>
+    <title>Benefit Costmetics</title> 
+    <link href='http://fonts.googleapis.com/css?family=Varela%7cVarela+Round' rel='stylesheet' type='text/css'/>
     <link href="Styles.css" rel="stylesheet" type="text/css" />
    <div class="main">
 
@@ -31,7 +32,7 @@
         </ul></div> 
     </div>
 
-    <title>Benefit Costmetics</title> 
+    
     
     
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -39,8 +40,11 @@
 
     </asp:ContentPlaceHolder>
 </head>
+   
 <body>
+    
     <form id="form1" runat="server">
+         
         <div class="main">
             
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
