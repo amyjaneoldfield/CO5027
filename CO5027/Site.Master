@@ -4,49 +4,38 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Benefit Costmetics</title> 
+     
     <link href='http://fonts.googleapis.com/css?family=Varela%7cVarela+Round' rel='stylesheet' type='text/css'/>
     <link href="Styles.css" rel="stylesheet" type="text/css" />
-   <div class="main">
 
+     <title>Benefit Costmetics</title> 
+    <asp:ContentPlaceHolder ID="head" runat="server"> 
+    </asp:ContentPlaceHolder>
+</head>
+   
+<body>
+    <form id="form1" runat="server">
+          <div class="main">
+        
     <img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" />
+<a href="ShoppingBag.aspx" class="button">£0.00  <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/></a>
 
-        
-        <a href="ShoppingBag.aspx" class="button">£0.00  <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/></a>
-
-         <div class="box">
-  <div class="container-1">
-      <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="search" placeholder="Search..." />
-  </div>
-
+      <div class="box">
+         <div class="container-1">
+         <span class="icon"><i class="fa fa-search"></i></span>
+         <input type="search" id="search" placeholder="Search..." />
          </div>
-
-        
+  </div>
+                 
     <div id="nav"><ul>
         <li><a href="~/Default.aspx" runat="server">Home</a></li> 
         <li><a href="~/Face.aspx" runat="server">Face Makeup</a></li>
         <li><a href="~/Eye.aspx" runat="server">Eye Makeup</a></li>
         <li><a href="~/Gift.aspx" runat="server">Gift Sets</a></li>
         <li><a href="~/Login.aspx" runat="server">Login / Register</a></li>
-        </ul></div> 
-    </div>
-
-    
-    
-    
-    <asp:ContentPlaceHolder ID="head" runat="server">
-
-
-    </asp:ContentPlaceHolder>
-</head>
-   
-<body>
-    
-    <form id="form1" runat="server">
-         
-        <div class="main">
-            
+        </ul>
+    </div> 
+       
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
@@ -63,8 +52,7 @@
         <img src="Images/facebook.png" alt="Facebook logo" width="32" height="32" /></a>
         <a class="instagram" href="https://instagram.com/benefitcosmeticsuk/">
         <img src="Images/instagram.png" alt="Facebook logo" width="32" height="32" /></a>
-           
-
+          
         <div class="subscribe">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
