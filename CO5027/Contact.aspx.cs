@@ -19,8 +19,12 @@ namespace CO5027
         {
             SmtpClient smtpClient = new SmtpClient();
             
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("1404159UoC@gmail.com", "website321");
-            MailMessage msg = new MailMessage("1404159UoC@gmail.com", "amyjaneoldfield@hotmail.com");
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("1404159UoC@gmail.com", "website321"); //sender
+            MailMessage msg = new MailMessage("1404159UoC@gmail.com", "amyjaneoldfield@hotmail.com",txtSubject.Text + " From: " + txtContactName.Text, txtContactMessage.Text);
+            smtpClient.Credentials = credentials; //all information for server (gmail)
+            smtpClient.EnableSsl = true;
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.Port = 587;
             smtpClient.Send(msg);
         }
     }

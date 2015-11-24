@@ -27,10 +27,15 @@
     <asp:TextBox ID="txtContactEmail" runat="server"></asp:TextBox>
 </p>
         <p>
+            <asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
+            <asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
+        </p>
+        <p>
             &nbsp;&nbsp;
             <asp:Label ID="lblContactMessage" runat="server" Text="Message:"></asp:Label>
+            <asp:TextBox ID="txtContactMessage" runat="server" TextMode="MultiLine"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <textarea id="txtContactMessage" cols="20" name="S1" rows="2"></textarea></p>
+            </p>
 <p>
     <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
 </p>
