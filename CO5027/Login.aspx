@@ -20,7 +20,7 @@
     <p>
         <!--
         &nbsp; -->
-
+        <div runat="server" id="divLogin">
         <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email:"></asp:Label>
         <!--
         &nbsp;
@@ -37,6 +37,7 @@
         <!--
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <asp:TextBox ID="txtPassword" runat="server" ForeColor="#F17877"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtPassword" ErrorMessage="Incorrect password, please try again."></asp:RequiredFieldValidator>
     </p>
     <p>
         <asp:CheckBox ID="chkRemember" runat="server" Font-Size="13px" Text="Remember me" />
@@ -44,8 +45,12 @@
     <p>
         <!--
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        -->
-        <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" OnClick="btnLogin_Click" />
+        --> </div>
+        <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" OnClick="btnLogin_Click" /> 
+        <div id="divLogged" runat="server" visible="false">
+            <p>Success! You have now registered.</p>
+           
+        </div>
     </p>
         </div>
 

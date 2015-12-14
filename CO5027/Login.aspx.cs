@@ -22,8 +22,8 @@ namespace CO5027
           {
           DataProcessor processor = new DataProcessor();
          processor.SetUserName(txtEmail.Text);
-         divSetUserName.Visible = false;
-         divSucess.Visible = true;
+         divLogin.Visible = false;
+         divLogged.Visible = true;
 }
 
 }
