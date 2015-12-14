@@ -262,6 +262,7 @@ display: inline-block;
 
 #posting{
     float: right;
+    
 }
 
 /*CSS For Admin page*/
@@ -316,7 +317,7 @@ display: inline-block;
 /*CSS FOR Footer and footer elements*/
 
 footer{
-width: auto;
+width: 960px; /* it was width: auto check it looks correct*/
 height: 250px;
 background-color: #F17877;
 margin-top: auto;

@@ -7,52 +7,76 @@
     <p>Sign in to your current account or create a new one if this is your first time visiting below!</p>
     
     <div id="login"> 
-    <h3>&nbsp; Returning Customer</h3>
-    <h4>&nbsp; Login below:</h4>
+    <h3>
+        <!--
+        &nbsp; 
+        --> Returning Customer</h3>
+    <h4>
+        <!---
+        &nbsp; 
+            -->
+            Login below:</h4>
 
     <p>
-        &nbsp;
+        <!--
+        &nbsp; -->
+
         <asp:Label ID="lblEmail" runat="server" AssociatedControlID="txtEmail" Text="Email:"></asp:Label>
-        &nbsp;<asp:TextBox ID="txtEmail" runat="server" ForeColor="#F17877"></asp:TextBox>
-    </p>
-    <p>
+        <!--
         &nbsp;
+        -->
+        <asp:TextBox ID="txtEmail" runat="server" ForeColor="#F17877"></asp:TextBox>
+    </p>
+
+    <p>
+       <!--
+        &nbsp; -->
         <asp:Label ID="lblPassword" runat="server" AssociatedControlID="txtPassword" Text="Password:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <asp:TextBox ID="txtPassword" runat="server" ForeColor="#F17877"></asp:TextBox>
     </p>
     <p>
         <asp:CheckBox ID="chkRemember" runat="server" Font-Size="13px" Text="Remember me" />
         </p>
     <p>
+        <!--
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        -->
         <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" />
     </p>
         </div>
 
     <div id="signup">
-    <h3>&nbsp; New Customer</h3>
-    <h4>&nbsp; Sign up below:</h4>
+    <h3>
+        <!--
+        &nbsp; -->
+         New Customer</h3>
+    <h4>
+        <!--&nbsp; -->
+        Sign up below:</h4>
     <p>
-        &nbsp;&nbsp;
+        <!--
+        &nbsp;&nbsp; -->
         <asp:Label ID="lblFirstname" runat="server" AssociatedControlID="txtFirstName" Text="First Name:"></asp:Label>
-        *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;
+      <!--  &nbsp;&nbsp; -->
         <asp:Label ID="lblLastName" runat="server" AssociatedControlID="txtLastName" Text="Last Name:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;
+      <!--  &nbsp;&nbsp; -->
         <asp:Label ID="lblEmailSingup" runat="server" AssociatedControlID="txtEmailSingup" Text="Email:"></asp:Label>
-        *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <!-- *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        -->
         <asp:TextBox ID="txtEmailSingup" runat="server" style="margin-left: 0px"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;
+       <!-- &nbsp;&nbsp;
         <asp:Label ID="lblPassSign" runat="server" AssociatedControlID="txtPassSign" Text="Password:"></asp:Label>
         &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtPassSign" runat="server"></asp:TextBox>

@@ -11,25 +11,32 @@
         <h3>Delivery address:</h3>
         <p>
             <asp:Label ID="lblDelAdd" runat="server" Text="Address:"></asp:Label>
-            *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="txtDelAdd" type="text" /></p>
+            <!--*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <input id="txtDelAdd" type="text" />
+
+        </p>
+
         <p>
             <asp:Label ID="lblDelAdd1" runat="server" Text="Addresss line 2:"></asp:Label>
-            &nbsp;
+            <!--&nbsp;-->
             <input id="txtDelAdd2" type="text" /></p>
+
         <p>
             <asp:Label ID="lblDelTown" runat="server" Text="Town:"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <input id="txtDelTown" type="text" /></p>
+        
         <p>
             <asp:Label ID="lblDelPostcode" runat="server" Text="Postcode:"></asp:Label>
-            *&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <!-- *&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <input id="txtDelPostcode" type="text" /></p>
+        
         <p>
             <asp:Label ID="lblDelCity" runat="server" Text="City:"></asp:Label>
-            *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <!--  *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <input id="txtDelCity" type="text" /></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>
+           <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             <asp:Button ID="btnDelAdd" runat="server" ForeColor="#F17877" Text="Add details" />
         </p>
     </div>
@@ -43,19 +50,31 @@
             </asp:DropDownList>
     </h3>
     <p>*Please note we are currnetly only shipping to UK residence* </p>
+
+    <!--
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    
+    -->
+
     <h3>Subtotal:</h3>
+
+    <!--
     <p>&nbsp;</p>
+-->
     <h3>Total:</h3>
+
+    <!--
     <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
+    -->
+
     <p>
         <asp:Button ID="btnContinue" runat="server" Text="Continue Shopping" ForeColor="#F17877" OnClick="btnContinue_Click"  />
+        <!--
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnCheckout" runat="server" Text="Checkout" ForeColor="#F17877" />
+       -->
+         <asp:Button ID="btnCheckout" runat="server" Text="Checkout" ForeColor="#F17877" />
     </p>
 </asp:Content>
 
