@@ -432,11 +432,17 @@ font-family: "Varela", sans-serif;
 
 #BottomFooter{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 180px;
     font-size: 10px;
+    
+    position: absolute;
 } /*For copyright & paying images*/
 
  #Validate{
-      text-align: left;
-      margin-top: -10px;
+      text-align: right;
+      
+   /*   margin-top: -10px; */
+     
+      margin-top: 180px;
+      position: absolute;
   } /*For validator links/text positioning*/

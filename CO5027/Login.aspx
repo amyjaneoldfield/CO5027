@@ -76,19 +76,19 @@
         <asp:TextBox ID="txtEmailSingup" runat="server" style="margin-left: 0px"></asp:TextBox>
     </p>
     <p>
-       <!-- &nbsp;&nbsp;
+       <!-- &nbsp;&nbsp; -->
         <asp:Label ID="lblPassSign" runat="server" AssociatedControlID="txtPassSign" Text="Password:"></asp:Label>
-        &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <!--     &nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <asp:TextBox ID="txtPassSign" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;
+      <!--  &nbsp;&nbsp; -->
         <asp:Label ID="lblConfPass" runat="server" AssociatedControlID="txtConfPass" Text="Confirm Password:"></asp:Label>
-        *&nbsp;<asp:TextBox ID="txtConfPass" runat="server"></asp:TextBox>
+      <!--  *&nbsp;1 --> <asp:TextBox ID="txtConfPass" runat="server"></asp:TextBox>
     </p>
     <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="txtCreate" runat="server" ForeColor="#F17877" Text="Create" />
+      <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    -->    <asp:Button ID="txtCreate" runat="server" ForeColor="#F17877" Text="Create" />
     </p>
         </div>
    
@@ -109,5 +109,6 @@
     <br />
     <br />
     <br />
+         
    
 </asp:Content>

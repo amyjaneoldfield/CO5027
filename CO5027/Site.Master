@@ -89,8 +89,7 @@
 
         <!--</br>
             make sure it doesnt need this-->
-
-          
+       
 
         <div id="BottomFooter">
         <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" /><!--(Reen, Simple Payment Methods - Visa, 2013)-->
@@ -102,6 +101,8 @@
         <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
         <a href="http://achecker.ca/checker/?uri=referer">Check WCAG</a>
+            </div>
+        <div>
             </div>
         </div>
         </footer>
