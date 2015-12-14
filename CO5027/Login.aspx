@@ -26,6 +26,8 @@
         &nbsp;
         -->
         <asp:TextBox ID="txtEmail" runat="server" ForeColor="#F17877"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="reqValEmail" runat="server" 
+            ControlToValidate="txtEmail" ErrorMessage="Valid email cannot be left blank, please enter email."></asp:RequiredFieldValidator>
     </p>
 
     <p>
@@ -43,7 +45,7 @@
         <!--
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         -->
-        <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" />
+        <asp:Button ID="btnLogin" runat="server" ForeColor="#F17877" Text="Login" OnClick="btnLogin_Click" />
     </p>
         </div>
 
