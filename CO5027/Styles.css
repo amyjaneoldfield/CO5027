@@ -446,3 +446,8 @@ font-family: "Varela", sans-serif;
       margin-top: 180px;
       position: absolute;
   } /*For validator links/text positioning*/
+
+    #map{
+        height: 448px;
+        width: 560px;
+    }

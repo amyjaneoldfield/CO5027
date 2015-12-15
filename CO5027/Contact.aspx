@@ -50,6 +50,17 @@
         <h3>&nbsp;</h3>
         <h3>&nbsp;</h3>
         <h3>Store location:</h3>
-    <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps" width="560" height="448" />
+        <!-- start for map -->
+         
+
+
+    <script src="Scripts/Maps.js"></script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1g3qhFlTplhXvjbOvXJ55wP0GiBtEgSA&callback=initMap">
+    </script>
+
+        <!--- end for map --><div id="map">
+   <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps" width="560" height="448" /> </div>
     </div>
 </asp:Content>
