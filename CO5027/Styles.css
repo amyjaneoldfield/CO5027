@@ -438,13 +438,11 @@ font-family: "Varela", sans-serif;
     position: absolute;
 } /*For copyright & paying images*/
 
- #Validate{
-      text-align: right;
+ #Validate, absolute{  
+     right: 250px;   
+     position: absolute;
+     margin-top: 180px;
       
-   /*   margin-top: -10px; */
-     
-      margin-top: 180px;
-      position: absolute;
   } /*For validator links/text positioning*/
 
     #map{
