@@ -13,6 +13,15 @@ namespace CO5027 {
     public partial class Contact {
         
         /// <summary>
+        /// divemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divemail;
+        
+        /// <summary>
         /// lblContactName control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContactName;
+        
+        /// <summary>
+        /// ValidatorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidatorName;
         
         /// <summary>
         /// lblContactEmail control.
@@ -49,6 +67,15 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtContactEmail;
         
         /// <summary>
+        /// ValEmailContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValEmailContact;
+        
+        /// <summary>
         /// lblSubject control.
         /// </summary>
         /// <remarks>
@@ -65,6 +92,15 @@ namespace CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSubject;
+        
+        /// <summary>
+        /// ValSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValSubject;
         
         /// <summary>
         /// lblContactMessage control.
@@ -85,6 +121,15 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.TextBox txtContactMessage;
         
         /// <summary>
+        /// ValMsgContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValMsgContact;
+        
+        /// <summary>
         /// btnSend control.
         /// </summary>
         /// <remarks>
@@ -92,5 +137,14 @@ namespace CO5027 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSend;
+        
+        /// <summary>
+        /// Divemailed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Divemailed;
     }
 }

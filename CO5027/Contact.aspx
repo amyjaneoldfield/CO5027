@@ -15,31 +15,44 @@
     <p>01244 328421</p>
         </div>
 
+
     <div id="email">
+    <div id="divemail" runat="server">
+        
 <p>
-  <!--  &nbsp;&nbsp; -->
+  <!--  &nbsp;&nbsp; --> 
     <asp:Label ID="lblContactName" runat="server" AssociatedControlID="txtContactName" Text="Name:"></asp:Label>
     <asp:TextBox ID="txtContactName" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="ValidatorName" runat="server" ControlToValidate="txtContactName" ErrorMessage="*Please ensure you've entered your name"></asp:RequiredFieldValidator>
 </p>
 <p>
   <!--  &nbsp;&nbsp; -->
     <asp:Label ID="lblContactEmail" runat="server" AssociatedControlID="txtContactEmail" Text="Email:"></asp:Label>
     <asp:TextBox ID="txtContactEmail" runat="server" TextMode="Email"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="ValEmailContact" runat="server" ControlToValidate="txtContactEmail" ErrorMessage="*Valid email is required, please don't leave blank."></asp:RequiredFieldValidator>
 </p>
         <p>
             <asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
             <asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="ValSubject" runat="server" ControlToValidate="txtSubject" ErrorMessage="*Please ensure a valid subject has been entered"></asp:RequiredFieldValidator>
         </p>
         <p>
            <!-- &nbsp;&nbsp; -->
             <asp:Label ID="lblContactMessage" runat="server" Text="Message:"></asp:Label>
             <asp:TextBox ID="txtContactMessage" runat="server" TextMode="MultiLine"></asp:TextBox>
           <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-            </p>
-<p>
+            <asp:RequiredFieldValidator ID="ValMsgContact" runat="server" ControlToValidate="txtContactMessage" ErrorMessage="*Please fill out the message field accurately"></asp:RequiredFieldValidator>
+            </p></div>
+
+    
+
     <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
-</p>
-        </div>
+
+        
+        <div id="Divemailed" runat="server" visible="false">
+    <p>Email successfully sent!</p>
+    </div></div>
+        
 
  <!--   <br /> -->
 
