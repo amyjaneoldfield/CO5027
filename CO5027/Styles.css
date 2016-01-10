@@ -310,7 +310,10 @@ display: inline-block;
 
 #location {
     text-align: center;
+    bottom: auto;
 } /*for map image*/
+
+
 /*end of contact page*/
 
 

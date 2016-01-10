@@ -17,39 +17,40 @@
 
     <div id="email">
 <p>
-    &nbsp;&nbsp;
+  <!--  &nbsp;&nbsp; -->
     <asp:Label ID="lblContactName" runat="server" AssociatedControlID="txtContactName" Text="Name:"></asp:Label>
     <asp:TextBox ID="txtContactName" runat="server"></asp:TextBox>
 </p>
 <p>
-    &nbsp;&nbsp;
+  <!--  &nbsp;&nbsp; -->
     <asp:Label ID="lblContactEmail" runat="server" AssociatedControlID="txtContactEmail" Text="Email:"></asp:Label>
-    <asp:TextBox ID="txtContactEmail" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtContactEmail" runat="server" TextMode="Email"></asp:TextBox>
 </p>
         <p>
             <asp:Label ID="lblSubject" runat="server" Text="Subject:"></asp:Label>
             <asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
         </p>
         <p>
-            &nbsp;&nbsp;
+           <!-- &nbsp;&nbsp; -->
             <asp:Label ID="lblContactMessage" runat="server" Text="Message:"></asp:Label>
             <asp:TextBox ID="txtContactMessage" runat="server" TextMode="MultiLine"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
             </p>
 <p>
     <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
 </p>
         </div>
 
-    <br />
+ <!--   <br /> -->
 
     <div id="location">
-    <h3>&nbsp;</h3>
+ <!--   <h3>&nbsp;</h3>
         <h3>&nbsp;</h3>
         <h3>&nbsp;</h3>
         <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3>
-        <h3>Store location:</h3>
+        <h3>&nbsp;</h3> -->
+      <h3>Store location:</h3>
+       
         <!-- start for map -->
          
 
@@ -59,8 +60,8 @@
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1g3qhFlTplhXvjbOvXJ55wP0GiBtEgSA&callback=initMap">
     </script>
-
-        <!--- end for map --><div id="map">
+         
+        <!--- end for map --><div id="map">  
    <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps" width="560" height="448" /> </div>
     </div>
 </asp:Content>
