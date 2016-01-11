@@ -21,25 +21,34 @@ namespace CO5027
             Page.Validate();
             if (Page.IsValid)
             {
-                DataProcessor processor = new DataProcessor();
-                processor.SetUserName(txtContactName.Text);
-                processor.SetUserName(txtContactEmail.Text);
-                processor.SetUserName(txtSubject.Text);
-                processor.SetUserName(txtContactMessage.Text);
-                divemail.Visible = false;
-                Divemailed.Visible = true;
-
+  
 
                 SmtpClient smtpClient = new SmtpClient();
 
                 System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("1404159UoC@gmail.com", "website321"); //sender
-                MailMessage msg = new MailMessage("1404159UoC@gmail.com", txtContactEmail.Text, " Subject: " + txtSubject.Text + " From: " + txtContactName.Text, txtContactMessage.Text);
+
+                MailMessage msg = new MailMessage("1404159UoC@gmail.com","1404159UoCCheck@gmail.com" );
+                
+                credentials.UserName = "1404159UoC@gmail.com";
+                credentials.Password = "website321";
                 smtpClient.Credentials = credentials; //all information for server (gmail)
+
+                msg.Subject = txtSubject.Text;
+                msg.Body = txtContactMessage.Text + " Recieved from: " +  txtContactEmail.Text;
+
+
                 smtpClient.EnableSsl = true;
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.Port = 587;
                 smtpClient.Send(msg);
 
+                txtSubject.Text = "";
+                txtContactEmail.Text = "";
+                txtContactMessage.Text = "";
+                txtContactName.Text = "";
+
+                LitSuccess.Text = "Email successfully sent!";   
+               
 
             }
 

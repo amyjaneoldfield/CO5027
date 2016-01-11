@@ -448,7 +448,16 @@ font-family: "Varela", sans-serif;
       
   } /*For validator links/text positioning*/
 
+
+
     #map{
-        height: 448px;
-        width: 560px;
-    }
+        height: 248px;
+        width: 360px;
+        margin: 0px auto;
+
+
+        padding: 250px;
+  
+        height: auto !important;
+      
+    } 

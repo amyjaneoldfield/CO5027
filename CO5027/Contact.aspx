@@ -49,6 +49,9 @@
     <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
 
         
+        <asp:Literal ID="LitSuccess" runat="server"></asp:Literal>
+
+        
         <div id="Divemailed" runat="server" visible="false">
     <p>Email successfully sent!</p>
     </div></div>
@@ -74,7 +77,9 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1g3qhFlTplhXvjbOvXJ55wP0GiBtEgSA&callback=initMap">
     </script>
          
-        <!--- end for map --><div id="map">  
+        <!--- end for map -->
+        
+        <div id="map">  
    <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps" width="560" height="448" /> </div>
     </div>
 </asp:Content>
