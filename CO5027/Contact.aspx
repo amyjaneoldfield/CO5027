@@ -29,6 +29,7 @@
   <!--  &nbsp;&nbsp; -->
     <asp:Label ID="lblContactEmail" runat="server" AssociatedControlID="txtContactEmail" Text="Email:"></asp:Label>
     <asp:TextBox ID="txtContactEmail" runat="server" TextMode="Email"></asp:TextBox>
+    <asp:RegularExpressionValidator ID="RegValidatorEmailError" runat="server" ErrorMessage="Invalid email used!" ControlToValidate="txtContactEmail" ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></asp:RegularExpressionValidator>
     <asp:RequiredFieldValidator ID="ValEmailContact" runat="server" ControlToValidate="txtContactEmail" ErrorMessage="*Valid email is required, please don't leave blank."></asp:RequiredFieldValidator>
 </p>
         <p>
@@ -65,7 +66,7 @@
         <h3>&nbsp;</h3>
         <h3>&nbsp;</h3>
         <h3>&nbsp;</h3> -->
-      <h3>Store location:</h3>
+     
        
         <!-- start for map -->
          
