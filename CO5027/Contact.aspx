@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h2>Contact</h2>
-    <p>If you have any problems or queries then feel free to contact us.</p>
+    <p>If you have any problems or queries then feel free to contact us via email below, phone call or visit the store!.</p>
 
     <div id="contact">
     <h3>Address:</h3>
@@ -15,6 +15,7 @@
     <p>01244 328421</p>
         </div>
 
+  
 
     <div id="email">
     <div id="divemail" runat="server">

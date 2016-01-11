@@ -308,6 +308,8 @@ display: inline-block;
     float: right;
 } /*For Address/telephone on contact page to position*/
 
+
+
 #location {
     text-align: center;
     bottom: auto;
@@ -451,12 +453,12 @@ font-family: "Varela", sans-serif;
 
 
     #map{
-        height: 248px;
-        width: 360px;
+        height: 48px;
+        width: 260px;
         margin: 0px auto;
 
 
-        padding: 250px;
+        padding: 230px;
   
         height: auto !important;
       
