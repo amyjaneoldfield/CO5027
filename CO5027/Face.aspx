@@ -16,6 +16,18 @@
     </p>
 
     <div id="foundation">
+        <asp:Repeater ID="rptrContent" runat="server" DataSourceID="contentDataSource"></asp:Repeater>
+
+        <asp:SqlDataSource ID="contentDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+
+        <ItemTemplate>
+            <ul>
+            <li><%# Eval("ProductName") %>
+
+
+            </li></ul>
+        </ItemTemplate>
+
         <img src="Images/foundation.png" height="200" width="200" alt="Hellow Flawless foundation image" /><!--(Benefit Cosmetics, 2015)-->
         <h3>Hello Flawless Oxygen Wow!</h3>
         <p>An oil-free liquid foundation to help you build on coverage for a natural flawless finish.</p>
