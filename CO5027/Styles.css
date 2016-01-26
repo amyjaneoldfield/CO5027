@@ -146,6 +146,15 @@ div#slider figure {
 }
 
 /*CSS FOR Face page*/
+.face{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #F17877;
+    width: 300px; 
+    height: 450px;
+    vertical-align: top;
+}
+
 #foundation{
     display: inline-block;
     text-align: center;

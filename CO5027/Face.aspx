@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Face.aspx.cs" Inherits="CO5027.Face" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,27 +16,44 @@
         </asp:DropDownList>
     </p>
 
-    <div id="foundation">
-        <asp:Repeater ID="rptrContent" runat="server" DataSourceID="contentDataSource"></asp:Repeater>
 
-        <asp:SqlDataSource ID="contentDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+    <asp:Repeater ID="rptrContent" runat="server" DataSourceID="DataSourceProducts">
 
+
+        <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
-            <ul>
-            <li><%# Eval("ProductName") %>
 
 
-            </li></ul>
+            <div class="face">
+
+                <h3><%# Eval("ProductName") %></h3>
+                <p><%# Eval("Description") %></p>
+                <h3>£<%# Eval("Price") %></h3>
+                <asp:Button ID="btnEasy" runat="server" ForeColor="#F17877" Text="Purchase" />
+                <!--   <asp:Button CommandArgument="" -->
+
+            </div>
+
         </ItemTemplate>
+        <FooterTemplate></FooterTemplate>
+    </asp:Repeater>
 
-        <img src="Images/foundation.png" height="200" width="200" alt="Hellow Flawless foundation image" /><!--(Benefit Cosmetics, 2015)-->
+
+    <asp:SqlDataSource ID="DataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([Id] &lt; @Id)">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="7" Name="Id" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+
+    <!--
+        <img src="Images/foundation.png" height="200" width="200" alt="Hellow Flawless foundation image" /><!--(Benefit Cosmetics, 2015)
         <h3>Hello Flawless Oxygen Wow!</h3>
         <p>An oil-free liquid foundation to help you build on coverage for a natural flawless finish.</p>
         <h3>£24</h3>
         <p>
             <asp:Button ID="btnFoundation" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
+        </p>-->
+
 
     <div id="easy">
         <img src="Images/bigeasy.jpe" height="200" width="200" alt="Big Easy BB cream image" /><!--(Benefit Cosmetics, 2015)-->
@@ -90,5 +108,5 @@
             <asp:Button ID="btnWatts" runat="server" ForeColor="#F17877" Text="Purchase" />
         </p>
     </div>
-   
+
 </asp:Content>
