@@ -6,7 +6,22 @@
 
     <p>View the current list of products below which are linked
         to the <br />current database system.</p>
-    <div id="adminTable">
+
+    <asp:Label ID="lblId" runat="server" Text="Product Id:"></asp:Label>
+    <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+
+    <asp:Label ID="lblName" runat="server" Text="Product Name:"></asp:Label>
+    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+
+    <asp:Button ID="btnAdminAdd" runat="server" ForeColor="#F17877" Text="Add" OnClick="btnAdminAdd_Click" />
+
+ <!--  <asp:Literal ID="LitProduct" runat="server"></asp:Literal>
+
+    <asp:Literal ID="LitPrice" runat="server"></asp:Literal>
+
+    <asp:Literal ID="LitDescription" runat="server"></asp:Literal>-->
+
+   <!-- <div id="adminTable">
     <table>
         <caption>Products table</caption>
         <tr>
@@ -40,7 +55,7 @@
     </table>
  <!--
                <br />
-    -->
+    
     </div>
 
     <div id="adminAdd">
@@ -51,31 +66,31 @@
             <!--
             *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             -->
-            <input id="txtAdminProduct" type="text" /></p>
+     <!--       <input id="txtAdminProduct" type="text" /></p>
         <p>
             <!--
             &nbsp;
-            -->
-                <asp:Label ID="lblAdminPrice" runat="server" Text="Price:"></asp:Label>
+            
+                <asp:Label ID="lblAdminPrice" runat="server" Text="Price:"></asp:Label>-->
             <!--
             *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             -->
-            <input id="txtAdminPrice" type="text" /></p>
+         <!--   <input id="txtAdminPrice" type="text" /></p>
         <p>
             <asp:Label ID="lblQTY" runat="server" Text="QTY:"></asp:Label>
            <!--
              *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           -->
+           
 
             <input id="txtQTY" type="text" /></p>
         <p>
             <asp:CheckBox ID="cboxDeleteEdit" runat="server" Text="Enable edit &amp; delete" />
             </p>
-        <p>
+        <p>-->
             <!--
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 -->
-            <asp:Button ID="btnAdminAdd" runat="server" ForeColor="#F17877" Text="Add" />
+         <!--   <asp:Button ID="btnAdminAdd" runat="server" ForeColor="#F17877" Text="Add" />
         </p>
         </div>
 <!--
@@ -97,5 +112,6 @@
 <br />
 <br />
     -->
+    <br />
 
 </asp:Content>

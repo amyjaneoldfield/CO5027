@@ -279,17 +279,19 @@ display: inline-block;
 #adminTable{
     width: 500px;
     float: left;
+    vertical-align: top;
 }
 
 #adminTable th{
     border: 1px solid #F17877;
+    vertical-align: top;
 }
 
 #adminAdd{
     float: right;
     display:inline-block;
     width: 300px;
-    
+    vertical-align: top;
 }
 
 /*CSS FOR LOGIN PAGE*/
