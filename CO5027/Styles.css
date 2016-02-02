@@ -474,3 +474,7 @@ font-family: "Varela", sans-serif;
         height: auto !important;
       
     } 
+
+    .status{
+        color: black;
+    }

@@ -5,9 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
-
-namespace CO5027
+namespace CO5027.Admin
 {
     public partial class Admin : System.Web.UI.Page
     {
@@ -18,7 +16,7 @@ namespace CO5027
 
         protected void btnAdminAdd_Click(object sender, EventArgs e)
         {
-         //   ProductsEntry entry = new ProductsEntry();
+
         }
     }
 }
