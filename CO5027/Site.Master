@@ -21,9 +21,9 @@
 <a href="ShoppingBag.aspx" class="button">£0.00  <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/></a>
               
               <div id="status">
-              <asp:LoginName ID="LoginName1" runat="server" />
-              <asp:LoginStatus ID="LoginStatus1" runat="server" />
-</div>
+              <asp:LoginName ID="lgnName" runat="server" />
+              <asp:LoginStatus ID="lgnStatus" runat="server" />
+              </div>
 
       <div class="box">
          <div class="container-1">

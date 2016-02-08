@@ -10,7 +10,7 @@
             <asp:CompleteWizardStep runat="server" />
         </WizardSteps>
         </asp:CreateUserWizard>
-        <asp:Login ID="Login1" runat="server">
+        <asp:Login ID="lgnCredentials" runat="server">
         </asp:Login>
     </p>
     
