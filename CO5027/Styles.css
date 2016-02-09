@@ -9,9 +9,8 @@ body{
 	font-family:  "Varela", sans-serif; 
 }/*for whole page*/
 
- #status{
-        color: #F17877;
-        
+ .status{
+        color: #F17877;     
     }
 
  /*ALL of below for search box doesnt work yet*/
@@ -472,10 +471,7 @@ font-family: "Varela", sans-serif;
         height: 48px;
         width: 260px;
         margin: 0px auto;
-
-
         padding: 230px;
-  
         height: auto !important;
       
     } 
