@@ -11,12 +11,21 @@ namespace CO5027.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnAdminAdd_Click(object sender, EventArgs e)
         {
+            Product entry = new Product();
+            entry.ProductName = txtName.Text;
+            entry.Description = txtDescription.Text;
+            entry.Price = float.Parse(txtPrice.Text);
+            db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
+            //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();
 
+            
+            db.Products.Add(entry);
+            db.SaveChanges();
         }
     }
 }

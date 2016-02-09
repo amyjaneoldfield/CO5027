@@ -13,10 +13,10 @@ namespace CO5027
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class db_1404159_WebsiteAssignment : DbContext
+    public partial class db_1404159_WebsiteAssignmentEntities : DbContext
     {
-        public db_1404159_WebsiteAssignment()
-            : base("name=db_1404159_WebsiteAssignment")
+        public db_1404159_WebsiteAssignmentEntities()
+            : base("name=db_1404159_WebsiteAssignmentEntities")
         {
         }
     

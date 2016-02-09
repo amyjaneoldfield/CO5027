@@ -23,7 +23,7 @@
               
                   <asp:LoginName ID="loginUserName" runat="server" CssClass="status" />
                   <asp:LoginStatus ID="loginStatus" runat="server" CssClass="status" />
-             
+              
 
       <div class="box">
          <div class="container-1">
@@ -75,7 +75,7 @@
             <div id="HelpLinks">
                 <ul>
                     <li><a href="~/Contact.aspx" runat="server">Contact us</a></li>
-                    <li><a href="~/Admin.aspx" runat="server">Admin Control</a></li>
+                    <li><a href="~/Admin/Admin.aspx" runat="server">Admin Control</a></li>
                 </ul>
             </div></div>
         

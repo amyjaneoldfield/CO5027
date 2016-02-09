@@ -9,12 +9,12 @@
     <p>View the current list of products below which are linked
         to the <br />current database system.</p>
 
-    <asp:Label ID="lblId" runat="server" Text="Product Id:"></asp:Label>
-    <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
-
     <asp:Label ID="lblName" runat="server" Text="Product Name:"></asp:Label>
     <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-
+    <asp:Label ID="lblDescription" runat="server" Text="Product description:"></asp:Label>
+    <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
+    <asp:Label ID="lblPrice" runat="server" Text="Price:"></asp:Label>
+    <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
     <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" />
 
 </asp:Content>
