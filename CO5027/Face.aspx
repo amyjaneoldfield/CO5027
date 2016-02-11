@@ -18,32 +18,20 @@
 
 
     <asp:Repeater ID="rptrContent" runat="server" DataSourceID="DataSourceProducts">
-
-
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
 
-
             <div class="face">
-
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
                 <h3>£<%# Eval("Price") %></h3>
-                <asp:Button ID="btnEasy" runat="server" ForeColor="#F17877" Text="Purchase" />
+                <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />
                 <!--   <asp:Button CommandArgument="" -->
-
             </div>
-
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
     </asp:Repeater>
 
-
-    <asp:SqlDataSource ID="DataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([Id] &lt; @Id)">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="7" Name="Id" Type="Int32" />
-        </SelectParameters>
-    </asp:SqlDataSource>
 
     <!--
         <img src="Images/foundation.png" height="200" width="200" alt="Hellow Flawless foundation image" /><!--(Benefit Cosmetics, 2015)

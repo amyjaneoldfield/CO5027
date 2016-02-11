@@ -13,6 +13,10 @@ body{
         color: #F17877;     
     }
 
+ .button{
+     color: #F17877; 
+ }
+
  /*ALL of below for search box doesnt work yet*/
 .box{
   margin-left: 755px;
