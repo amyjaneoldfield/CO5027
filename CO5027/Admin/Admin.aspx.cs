@@ -16,16 +16,36 @@ namespace CO5027.Admin
 
         protected void btnAdminAdd_Click(object sender, EventArgs e)
         {
-            Product entry = new Product();
+       
+           Product entry = new Product();
             entry.ProductName = txtName.Text;
             entry.Description = txtDescription.Text;
+            
             entry.Price = float.Parse(txtPrice.Text);
+         //   entry.AltTxt = txtAltTxt.Text;
+
+            
+         
             db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
             //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();
 
-            
+
             db.Products.Add(entry);
-            db.SaveChanges();
+db.SaveChanges();
+
+
+     //      string Id = Request.QueryString["Id"];
+
+     //       string filename = Id + ".jpg";
+       //     string saveLocation = Server.MapPath("~/ProductImages/" + filename);
+
+            
+
+            
+         //   FileUpload.SaveAs(saveLocation);
+            
         }
+
+        
     }
 }

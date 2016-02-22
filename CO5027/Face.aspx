@@ -25,6 +25,7 @@
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
                 <h3>£<%# Eval("Price") %></h3>
+           <!--     <img src ="<%# Eval("Images/Image") %> "/> -->
                 <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />
                 <!--   <asp:Button CommandArgument="" -->
             </div>
