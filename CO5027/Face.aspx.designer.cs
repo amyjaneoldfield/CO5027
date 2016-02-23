@@ -40,6 +40,15 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.Repeater rptrContent;
         
         /// <summary>
+        /// DataSourceProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DataSourceProducts;
+        
+        /// <summary>
         /// btnFoundation control.
         /// </summary>
         /// <remarks>

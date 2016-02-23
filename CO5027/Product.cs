@@ -18,5 +18,6 @@ namespace CO5027
         public string ProductName { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
+        public string AltTxt { get; set; }
     }
 }

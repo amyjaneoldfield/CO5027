@@ -33,4 +33,8 @@
      </asp:GridView>
      <asp:SqlDataSource ID="AdminProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]">
      </asp:SqlDataSource>
+     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DropDownListDataSource" DataTextField="ProductName" DataValueField="Id">
+     </asp:DropDownList>
+     <asp:SqlDataSource ID="DropDownListDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Items]"></asp:SqlDataSource>
+     <asp:FileUpload ID="FileUpload1" runat="server" />
 </asp:Content>

@@ -22,7 +22,7 @@ namespace CO5027.Admin
             entry.Description = txtDescription.Text;
             
             entry.Price = float.Parse(txtPrice.Text);
-         //   entry.AltTxt = txtAltTxt.Text;
+            entry.AltTxt = txtAltTxt.Text;
 
             
          
@@ -34,15 +34,15 @@ namespace CO5027.Admin
 db.SaveChanges();
 
 
-     //      string Id = Request.QueryString["Id"];
+           string Id = entry.Id.ToString();
 
-     //       string filename = Id + ".jpg";
-       //     string saveLocation = Server.MapPath("~/ProductImages/" + filename);
-
-            
+           string filename = Id + ".jpg";
+           string saveLocation = Server.MapPath("~/ProductImages/" + filename);
 
             
-         //   FileUpload.SaveAs(saveLocation);
+
+            
+            FileUpload.SaveAs(saveLocation);
             
         }
 

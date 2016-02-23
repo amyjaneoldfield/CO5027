@@ -123,12 +123,15 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="ProductImages\8.jpg" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\Maps.js" />
     <Content Include="ShoppingBag.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="Admin\Web.config" />
+    <Content Include="Admin\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
@@ -240,7 +243,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="ProductImages\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
