@@ -24,7 +24,6 @@ namespace CO5027.Admin
             entry.Price = float.Parse(txtPrice.Text);
             entry.AltTxt = txtAltTxt.Text;
 
-            
          
             db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
             //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();

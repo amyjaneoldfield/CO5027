@@ -23,15 +23,39 @@
 
     <asp:GridView ID="gviewProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="AdminProducts">
         <Columns>
+            <asp:CommandField ShowEditButton="True" ButtonType="Button" ShowDeleteButton="True" />
             <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
             <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
             <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
             <asp:BoundField DataField="AltTxt" HeaderText="AltTxt" SortExpression="AltTxt" />
-            <asp:BoundField DataField="Image" HeaderText="Image" SortExpression="Image" />
         </Columns>
      </asp:GridView>
-     <asp:SqlDataSource ID="AdminProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]">
+     <asp:SqlDataSource ID="AdminProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Products] WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt" InsertCommand="INSERT INTO [Products] ([ProductName], [Price], [Description], [AltTxt]) VALUES (@ProductName, @Price, @Description, @AltTxt)" UpdateCommand="UPDATE [Products] SET [ProductName] = @ProductName, [Price] = @Price, [Description] = @Description, [AltTxt] = @AltTxt WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt">
+         <DeleteParameters>
+             <asp:Parameter Name="original_Id" Type="Int32" />
+             <asp:Parameter Name="original_ProductName" Type="String" />
+             <asp:Parameter Name="original_Price" Type="Double" />
+             <asp:Parameter Name="original_Description" Type="String" />
+             <asp:Parameter Name="original_AltTxt" Type="String" />
+         </DeleteParameters>
+         <InsertParameters>
+             <asp:Parameter Name="ProductName" Type="String" />
+             <asp:Parameter Name="Price" Type="Double" />
+             <asp:Parameter Name="Description" Type="String" />
+             <asp:Parameter Name="AltTxt" Type="String" />
+         </InsertParameters>
+         <UpdateParameters>
+             <asp:Parameter Name="ProductName" Type="String" />
+             <asp:Parameter Name="Price" Type="Double" />
+             <asp:Parameter Name="Description" Type="String" />
+             <asp:Parameter Name="AltTxt" Type="String" />
+             <asp:Parameter Name="original_Id" Type="Int32" />
+             <asp:Parameter Name="original_ProductName" Type="String" />
+             <asp:Parameter Name="original_Price" Type="Double" />
+             <asp:Parameter Name="original_Description" Type="String" />
+             <asp:Parameter Name="original_AltTxt" Type="String" />
+         </UpdateParameters>
      </asp:SqlDataSource>
      <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DropDownListDataSource" DataTextField="ProductName" DataValueField="Id">
      </asp:DropDownList>
