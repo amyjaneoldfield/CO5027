@@ -31,57 +31,21 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.DropDownList dListEye;
         
         /// <summary>
-        /// btnRoller control.
+        /// rptrContentEye control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRoller;
+        protected global::System.Web.UI.WebControls.Repeater rptrContentEye;
         
         /// <summary>
-        /// btnReal control.
+        /// datasourceProductsEye control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReal;
-        
-        /// <summary>
-        /// btnBrow control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBrow;
-        
-        /// <summary>
-        /// btnLash control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLash;
-        
-        /// <summary>
-        /// btnLiner control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLiner;
-        
-        /// <summary>
-        /// btnShadow control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnShadow;
+        protected global::System.Web.UI.WebControls.SqlDataSource datasourceProductsEye;
     }
 }

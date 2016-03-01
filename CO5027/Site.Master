@@ -52,11 +52,11 @@
         <div class="social">
                 <h2>Stay Connected</h2>
         <a class="twitter" href="https://twitter.com/BenefitUK">
-        <img src="Images/twitter.png" alt="Twitter logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Twitter, 2015)-->
+        <img src="~/Images/twitter.png" runat="server" alt="Twitter logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Twitter, 2015)-->
         <a class="facebook" href="https://www.facebook.com/benefitcosmetics">
-        <img src="Images/facebook.png" alt="Facebook logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Facebook, 2015)-->
+        <img src="~/Images/facebook.png" runat="server" alt="Facebook logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Facebook, 2015)-->
         <a class="instagram" href="https://instagram.com/benefitcosmeticsuk/">
-        <img src="Images/instagram.png" alt="Instagram logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Instagram, 2015)-->
+        <img src="~/Images/instagram.png" runat="server" alt="Instagram logo" width="32" height="32" /></a><!--(Hernandez, Social Media Pink - Instagram, 2015)-->
           
         <div class="subscribe">
   <div class="container-1">

@@ -123,6 +123,9 @@
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
     <Content Include="packages.config" />
+    <Content Include="ProductImages\16.jpg" />
+    <Content Include="ProductImages\17.jpg" />
+    <Content Include="ProductImages\18.jpg" />
     <Content Include="ProductImages\8.jpg" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />

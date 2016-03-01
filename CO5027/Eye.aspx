@@ -14,74 +14,37 @@
         </asp:DropDownList>
     </p>
 
-    <div id="roller">
-        <img src="Images/roller.jpe" height="200" width="200" alt="Roller Lash Mascara Image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>Roller Lash Mascara</h3>
-        <p>Get lashes that volumize and curl all in one product with this new lifting brush. </p>
-        <h3>£16</h3>
-        <p>
-            <asp:Button ID="btnRoller" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
+    <asp:Repeater ID="rptrContentEye" runat="server" DataSourceID="datasourceProductsEye">
+    <HeaderTemplate> </HeaderTemplate>
+        <ItemTemplate>
 
-    <div id="real">
-        <img src="Images/real.jpg" height="200" width="200" alt="they're real! mascara image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>They're Real! Mascara</h3>
-        <p>Get the longest and thickest lash result with this mascara.</p>
-        <h3>£16</h3>
-        <p>
-            <asp:Button ID="btnReal" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
+            <div class="face">
+                <img src="ProductImages/<%# Eval("Id") %>.jpg"/>
+                <h3><%# Eval("ProductName") %></h3>
+                <p><%# Eval("Description") %></p>
+                <h3>£<%# Eval("Price") %></h3>
+               
+                <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />
+                <!--   <asp:Button CommandArgument="" -->
+            </div>
+        </ItemTemplate>
+        <FooterTemplate></FooterTemplate>
 
-    <div id="brow">
-        <img src="Images/brow.png" height="200" width="200" alt="Gimmie Brow filler image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>Gimmie Brow</h3>
-        <p>Fill in, shape or colour your brows using our natural brush.</p>
-        <h3>£12</h3>
-        <p>
-            <asp:Button ID="btnBrow" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
+    </asp:Repeater>
 
-
-
-    <br />
-    <br />
-
-    <div id="lash">
-        <img src="Images/lash.jpg" height="200" width="200" alt="big spender false lashes image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>Big Spender Lash</h3>
-        <p>Apply these natural yet flawless finish long lasting lashes to get stylish eyes.</p>
-        <h3>£8</h3>
-        <p>
-            <asp:Button ID="btnLash" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
-
-    <div id="liner">
-        <img src="Images/liner.jpg" height="200" width="200" alt="they're real! push-up eyeliner image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>They're Real! Push-Up Eyeliner</h3>
-        <p>Get the most dramatic liner look with our new and improved applicator.</p>
-        <h3>£18</h3>
-        <p>
-            <asp:Button ID="btnLiner" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
-
-    <div id="shadow">
-        <img src="Images/shadow.jpg" height="200" width="200" alt="new! creaseless cream shadow image" /><!--(Benefit Cosmetics, 2015)-->
-        <h3>new! creaseless cream shadow</h3>
-        <p>Create a simple yet flawless natural shadow look with our cream product.</p>
-        <h3>£8</h3>
-        <p>
-            <asp:Button ID="btnShadow" runat="server" ForeColor="#F17877" Text="Purchase" />
-        </p>
-    </div>
-
-    <br />
+    <asp:SqlDataSource ID="datasourceProductsEye" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE (([Id] &gt;= @Id) AND ([Id] &lt;= @Id2))">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="8" Name="Id" Type="Int32" />
+            <asp:Parameter DefaultValue="16" Name="Id2" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+  
+      </asp:Content>
 
 
 
 
-</asp:Content>
+
+
+
+
