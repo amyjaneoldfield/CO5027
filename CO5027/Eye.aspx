@@ -19,7 +19,7 @@
         <ItemTemplate>
 
             <div class="face">
-                <img src="ProductImages/<%# Eval("Id") %>.jpg"/>
+                <img src="ProductImages/<%# Eval("Id") %>.jpg"  alt="<%#Eval("AltTxt") %>" width="<%#Eval("Width") %>" height="<%#Eval("Height") %>"/>
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
                 <h3>£<%# Eval("Price") %></h3>

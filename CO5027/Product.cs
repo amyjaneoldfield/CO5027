@@ -19,5 +19,8 @@ namespace CO5027
         public double Price { get; set; }
         public string Description { get; set; }
         public string AltTxt { get; set; }
+        public Nullable<int> Stock { get; set; }
+        public Nullable<int> Height { get; set; }
+        public Nullable<int> Width { get; set; }
     }
 }

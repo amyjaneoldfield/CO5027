@@ -23,8 +23,11 @@ namespace CO5027.Admin
             
             entry.Price = float.Parse(txtPrice.Text);
             entry.AltTxt = txtAltTxt.Text;
+            entry.Stock = int.Parse(txtStock.Text);
+            entry.Height = int.Parse(txtHeight.Text);
+            entry.Width = int.Parse(txtWidth.Text);
 
-         
+
             db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
             //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();
 

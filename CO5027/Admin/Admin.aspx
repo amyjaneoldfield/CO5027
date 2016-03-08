@@ -19,42 +19,63 @@
      <asp:FileUpload ID="FileUpload" runat="server" />
      <asp:Label ID="lblAltTxt" runat="server" Text="Alt Text:"></asp:Label>
     <asp:TextBox ID="txtAltTxt" runat="server"></asp:TextBox>
+     <asp:Label ID="lblStock" runat="server" Text="Stock:"></asp:Label>
+     <asp:TextBox ID="txtStock" runat="server"></asp:TextBox>
+     <asp:Label ID="lblHeight" runat="server" Text="Height:"></asp:Label>
+     <asp:TextBox ID="txtHeight" runat="server"></asp:TextBox>
+     <asp:Label ID="lblWidth" runat="server" Text="Width:"></asp:Label>
+     <asp:TextBox ID="txtWidth" runat="server"></asp:TextBox>
     <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" />
 
     <asp:GridView ID="gviewProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="AdminProducts">
         <Columns>
-            <asp:CommandField ShowEditButton="True" ButtonType="Button" ShowDeleteButton="True" />
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
             <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
             <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
             <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
             <asp:BoundField DataField="AltTxt" HeaderText="AltTxt" SortExpression="AltTxt" />
+            <asp:BoundField DataField="Stock" HeaderText="Stock" SortExpression="Stock" />
+            <asp:BoundField DataField="Height" HeaderText="Height" SortExpression="Height" />
+            <asp:BoundField DataField="Width" HeaderText="Width" SortExpression="Width" />
         </Columns>
      </asp:GridView>
-     <asp:SqlDataSource ID="AdminProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Products] WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt" InsertCommand="INSERT INTO [Products] ([ProductName], [Price], [Description], [AltTxt]) VALUES (@ProductName, @Price, @Description, @AltTxt)" UpdateCommand="UPDATE [Products] SET [ProductName] = @ProductName, [Price] = @Price, [Description] = @Description, [AltTxt] = @AltTxt WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt">
+     <asp:SqlDataSource ID="AdminProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Products] WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL)) AND (([Height] = @original_Height) OR ([Height] IS NULL AND @original_Height IS NULL)) AND (([Width] = @original_Width) OR ([Width] IS NULL AND @original_Width IS NULL))" InsertCommand="INSERT INTO [Products] ([ProductName], [Price], [Description], [AltTxt], [Stock], [Height], [Width]) VALUES (@ProductName, @Price, @Description, @AltTxt, @Stock, @Height, @Width)" UpdateCommand="UPDATE [Products] SET [ProductName] = @ProductName, [Price] = @Price, [Description] = @Description, [AltTxt] = @AltTxt, [Stock] = @Stock, [Height] = @Height, [Width] = @Width WHERE [Id] = @original_Id AND [ProductName] = @original_ProductName AND [Price] = @original_Price AND [Description] = @original_Description AND [AltTxt] = @original_AltTxt AND (([Stock] = @original_Stock) OR ([Stock] IS NULL AND @original_Stock IS NULL)) AND (([Height] = @original_Height) OR ([Height] IS NULL AND @original_Height IS NULL)) AND (([Width] = @original_Width) OR ([Width] IS NULL AND @original_Width IS NULL))">
          <DeleteParameters>
              <asp:Parameter Name="original_Id" Type="Int32" />
              <asp:Parameter Name="original_ProductName" Type="String" />
              <asp:Parameter Name="original_Price" Type="Double" />
              <asp:Parameter Name="original_Description" Type="String" />
              <asp:Parameter Name="original_AltTxt" Type="String" />
+             <asp:Parameter Name="original_Stock" Type="Int32" />
+             <asp:Parameter Name="original_Height" Type="Int32" />
+             <asp:Parameter Name="original_Width" Type="Int32" />
          </DeleteParameters>
          <InsertParameters>
              <asp:Parameter Name="ProductName" Type="String" />
              <asp:Parameter Name="Price" Type="Double" />
              <asp:Parameter Name="Description" Type="String" />
              <asp:Parameter Name="AltTxt" Type="String" />
+             <asp:Parameter Name="Stock" Type="Int32" />
+             <asp:Parameter Name="Height" Type="Int32" />
+             <asp:Parameter Name="Width" Type="Int32" />
          </InsertParameters>
          <UpdateParameters>
              <asp:Parameter Name="ProductName" Type="String" />
              <asp:Parameter Name="Price" Type="Double" />
              <asp:Parameter Name="Description" Type="String" />
              <asp:Parameter Name="AltTxt" Type="String" />
+             <asp:Parameter Name="Stock" Type="Int32" />
+             <asp:Parameter Name="Height" Type="Int32" />
+             <asp:Parameter Name="Width" Type="Int32" />
              <asp:Parameter Name="original_Id" Type="Int32" />
              <asp:Parameter Name="original_ProductName" Type="String" />
              <asp:Parameter Name="original_Price" Type="Double" />
              <asp:Parameter Name="original_Description" Type="String" />
              <asp:Parameter Name="original_AltTxt" Type="String" />
+             <asp:Parameter Name="original_Stock" Type="Int32" />
+             <asp:Parameter Name="original_Height" Type="Int32" />
+             <asp:Parameter Name="original_Width" Type="Int32" />
          </UpdateParameters>
      </asp:SqlDataSource>
      <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DropDownListDataSource" DataTextField="ProductName" DataValueField="Id">

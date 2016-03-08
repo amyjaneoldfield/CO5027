@@ -14,6 +14,9 @@
           <Property Name="Price" Type="float" Nullable="false" />
           <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
           <Property Name="AltTxt" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Stock" Type="int" />
+          <Property Name="Height" Type="int" />
+          <Property Name="Width" Type="int" />
         </EntityType>
         <EntityContainer Name="db_1404159_WebsiteAssignmentModelStoreContainer">
           <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
@@ -31,6 +34,9 @@
           <Property Name="Price" Type="Double" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="AltTxt" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Stock" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+          <Property Name="Width" Type="Int32" />
         </EntityType>
         <EntityContainer Name="db_1404159_WebsiteAssignmentEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Products" EntityType="Self.Product" />
@@ -44,6 +50,9 @@
           <EntitySetMapping Name="Products">
             <EntityTypeMapping TypeName="db_1404159_WebsiteAssignmentModel.Product">
               <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
                 <ScalarProperty Name="AltTxt" ColumnName="AltTxt" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
