@@ -22,10 +22,10 @@
         <ItemTemplate>
 
             <div class="face">
+               <img src="ProductImages/<%# Eval("Id") %>.jpg"  alt="<%#Eval("AltTxt") %>" width="<%#Eval("Width") %>" height="<%#Eval("Height") %>"/>
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
                 <h3>£<%# Eval("Price") %></h3>
-               <img src="ProductImages/<%# Eval("Id") %> "/>
                 <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />
                 <!--   <asp:Button CommandArgument="" -->
             </div>
@@ -33,7 +33,12 @@
         <FooterTemplate></FooterTemplate>
     </asp:Repeater>
     
-    <asp:SqlDataSource ID="DataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="DataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE (([Id] &gt;= @Id) AND ([Id] &lt;= @Id2))">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="9" Name="Id" Type="Int32" />
+            <asp:Parameter DefaultValue="14" Name="Id2" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 
 
 </asp:Content>

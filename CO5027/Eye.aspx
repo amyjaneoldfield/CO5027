@@ -34,8 +34,8 @@
 
     <asp:SqlDataSource ID="datasourceProductsEye" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE (([Id] &gt;= @Id) AND ([Id] &lt;= @Id2))">
         <SelectParameters>
-            <asp:Parameter DefaultValue="8" Name="Id" Type="Int32" />
-            <asp:Parameter DefaultValue="16" Name="Id2" Type="Int32" />
+            <asp:Parameter DefaultValue="16" Name="Id" Type="Int32" />
+            <asp:Parameter DefaultValue="1012" Name="Id2" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
   

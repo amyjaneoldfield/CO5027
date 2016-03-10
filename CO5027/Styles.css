@@ -284,6 +284,11 @@ display: inline-block;
 
 /*CSS For Admin page*/
 
+.adminEnter{
+    text-align: left;
+    width: 900px;
+}
+
 #adminTable{
     width: 500px;
     float: left;

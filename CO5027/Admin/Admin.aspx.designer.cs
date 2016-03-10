@@ -31,6 +31,15 @@ namespace CO5027.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
+        /// ValName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValName;
+        
+        /// <summary>
         /// lblDescription control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace CO5027.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescription;
+        
+        /// <summary>
+        /// ValDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValDescription;
         
         /// <summary>
         /// lblPrice control.
@@ -67,6 +85,15 @@ namespace CO5027.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
+        /// ValPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValPrice;
+        
+        /// <summary>
         /// lblUpload control.
         /// </summary>
         /// <remarks>
@@ -83,6 +110,15 @@ namespace CO5027.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload FileUpload;
+        
+        /// <summary>
+        /// ValImg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValImg;
         
         /// <summary>
         /// lblAltTxt control.
@@ -103,6 +139,15 @@ namespace CO5027.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtAltTxt;
         
         /// <summary>
+        /// ValAltTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValAltTxt;
+        
+        /// <summary>
         /// lblStock control.
         /// </summary>
         /// <remarks>
@@ -119,6 +164,15 @@ namespace CO5027.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtStock;
+        
+        /// <summary>
+        /// ValStock control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValStock;
         
         /// <summary>
         /// lblHeight control.
@@ -139,6 +193,15 @@ namespace CO5027.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtHeight;
         
         /// <summary>
+        /// ValHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValHeight;
+        
+        /// <summary>
         /// lblWidth control.
         /// </summary>
         /// <remarks>
@@ -155,6 +218,15 @@ namespace CO5027.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtWidth;
+        
+        /// <summary>
+        /// ValWidth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValWidth;
         
         /// <summary>
         /// btnAdminAdd control.

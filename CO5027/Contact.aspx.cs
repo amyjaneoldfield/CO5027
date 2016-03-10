@@ -34,7 +34,7 @@ namespace CO5027
                 smtpClient.Credentials = credentials; //all information for server (gmail)
 
                 msg.Subject = txtSubject.Text;
-                msg.Body = txtContactMessage.Text + " Recieved from: " +  txtContactEmail.Text;
+                msg.Body = txtContactMessage.Text + " Recieved from: " + txtContactName.Text + ", " +  txtContactEmail.Text;
 
 
                 smtpClient.EnableSsl = true;

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h2>Contact</h2>
-    <p>If you have any problems or queries then feel free to contact us via email below, phone call or visit the store!.</p>
+    <p>If you have any problems or queries then feel free to contact us via email below, phone call or visit the store!</p>
 
     <div id="contact">
     <h3>Address:</h3>
@@ -21,13 +21,13 @@
     <div id="divemail" runat="server">
         
 <p>
-  <!--  &nbsp;&nbsp; --> 
+  
     <asp:Label ID="lblContactName" runat="server" AssociatedControlID="txtContactName" Text="Name:"></asp:Label>
     <asp:TextBox ID="txtContactName" runat="server"></asp:TextBox>
     <asp:RequiredFieldValidator ID="ValidatorName" runat="server" ControlToValidate="txtContactName" ErrorMessage="*Please ensure you've entered your name"></asp:RequiredFieldValidator>
 </p>
 <p>
-  <!--  &nbsp;&nbsp; -->
+  
     <asp:Label ID="lblContactEmail" runat="server" AssociatedControlID="txtContactEmail" Text="Email:"></asp:Label>
     <asp:TextBox ID="txtContactEmail" runat="server" TextMode="Email"></asp:TextBox>
     <asp:RegularExpressionValidator ID="RegValidatorEmailError" runat="server" ErrorMessage="Invalid email used!" ControlToValidate="txtContactEmail" ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></asp:RegularExpressionValidator>
@@ -39,10 +39,10 @@
             <asp:RequiredFieldValidator ID="ValSubject" runat="server" ControlToValidate="txtSubject" ErrorMessage="*Please ensure a valid subject has been entered"></asp:RequiredFieldValidator>
         </p>
         <p>
-           <!-- &nbsp;&nbsp; -->
+           
             <asp:Label ID="lblContactMessage" runat="server" Text="Message:"></asp:Label>
             <asp:TextBox ID="txtContactMessage" runat="server" TextMode="MultiLine"></asp:TextBox>
-          <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+        
             <asp:RequiredFieldValidator ID="ValMsgContact" runat="server" ControlToValidate="txtContactMessage" ErrorMessage="*Please fill out the message field accurately"></asp:RequiredFieldValidator>
             </p></div>
 
@@ -57,31 +57,18 @@
         <div id="Divemailed" runat="server" visible="false">
     <p>Email successfully sent!</p>
     </div></div>
-        
-
- <!--   <br /> -->
 
     <div id="location">
- <!--   <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3> -->
-     
-       
         <!-- start for map -->
-         
-
-
     <script src="Scripts/Maps.js"></script>
 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1g3qhFlTplhXvjbOvXJ55wP0GiBtEgSA&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1g3qhFlTplhXvjbOvXJ55wP0GiBtEgSA&callback=initMap">
     </script>
          
         <!--- end for map -->
         
         <div id="map">  
-   <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps" width="560" height="448" /> </div>
+   <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps, 
+       located on Pool Lane which can be accessed from the A5117 road after you turn off the M56." width="560" height="448" /> </div>
     </div>
 </asp:Content>

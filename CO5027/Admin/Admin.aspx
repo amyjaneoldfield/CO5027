@@ -5,27 +5,81 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <h3>Welcome back admin user!</h3>
+    <p>Insert a new product to the database below!</p>
+ 
 
-    <p>View the current list of products below which are linked
-        to the <br />current database system.</p>
-
-    <asp:Label ID="lblName" runat="server" Text="Product Name:"></asp:Label>
+    <div class="adminEnter" runat="server">
+    <asp:Label ID="lblName" runat="server" Text="Product Name:"></asp:Label></div>
+  
+    <div class="adminEnter" runat="server">
     <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-    <asp:Label ID="lblDescription" runat="server" Text="Product description:"></asp:Label>
+     <asp:RequiredFieldValidator ID="ValName" runat="server" ControlToValidate="txtName" ErrorMessage="Error product name field must be filled in to be succesful."></asp:RequiredFieldValidator>
+   </div>
+
+    
+    <div class="adminEnter" runat="server">
+    <asp:Label ID="lblDescription" runat="server" Text="Product description:"></asp:Label></div>
+    
+    <div class="adminEnter" runat="server">
     <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
-    <asp:Label ID="lblPrice" runat="server" Text="Price:"></asp:Label>
+     <asp:RequiredFieldValidator ID="ValDescription" runat="server" ControlToValidate="txtHeight" ErrorMessage="Error, please ensure a suitable description has been entered."></asp:RequiredFieldValidator>
+    </div>
+
+<div class="adminEnter" runat="server">
+    <asp:Label ID="lblPrice" runat="server" Text="Price:"></asp:Label></div>
+
+
+    <div class="adminEnter" runat="server">
     <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+     <asp:RequiredFieldValidator ID="ValPrice" runat="server" ControlToValidate="txtPrice" ErrorMessage="Error, please insert a price. Ensuring you entered as numbers."></asp:RequiredFieldValidator>
+    </div>
+
+    <div class="adminEnter" runat="server">
      <asp:Label ID="lblUpload" runat="server" Text="Upload Image:"></asp:Label>
+    </div>
+
+    <div class="adminEnter" runat="server">
      <asp:FileUpload ID="FileUpload" runat="server" />
-     <asp:Label ID="lblAltTxt" runat="server" Text="Alt Text:"></asp:Label>
+    <asp:RequiredFieldValidator ID="ValImg" runat="server" ErrorMessage="Error, please ensure you have selected a suitable image." ControlToValidate="FileUpload"></asp:RequiredFieldValidator>
+     </div>
+
+    <div class="adminEnter" runat="server">
+    <asp:Label ID="lblAltTxt" runat="server" Text="Alt Text:"></asp:Label>
+    </div>
+
+    <div class="adminEnter" runat="server">
     <asp:TextBox ID="txtAltTxt" runat="server"></asp:TextBox>
-     <asp:Label ID="lblStock" runat="server" Text="Stock:"></asp:Label>
+    <asp:RequiredFieldValidator ID="ValAltTxt" runat="server" ErrorMessage="Error, please ensure you have entered a clear suitable description of the image uploaded." ControlToValidate="txtAltTxt"></asp:RequiredFieldValidator>
+     </div>
+    
+    <div class="adminEnter" runat="server">
+    <asp:Label ID="lblStock" runat="server" Text="Stock:"></asp:Label>
+    </div>
+    <div class="adminEnter" runat="server">
      <asp:TextBox ID="txtStock" runat="server"></asp:TextBox>
-     <asp:Label ID="lblHeight" runat="server" Text="Height:"></asp:Label>
+    <asp:RequiredFieldValidator ID="ValStock" runat="server" ErrorMessage="Error, please insert the number of stock avalible." ControlToValidate="txtStock"></asp:RequiredFieldValidator>
+     </div>
+
+    <div class="adminEnter" runat="server">
+    <asp:Label ID="lblHeight" runat="server" Text="Height:"></asp:Label>
+    </div>
+    <div class="adminEnter" runat="server">
      <asp:TextBox ID="txtHeight" runat="server"></asp:TextBox>
-     <asp:Label ID="lblWidth" runat="server" Text="Width:"></asp:Label>
+    <asp:RequiredFieldValidator ID="ValHeight" runat="server" ErrorMessage="Error, please insert the image height. Ensuring you enter just the number." ControlToValidate="txtHeight"></asp:RequiredFieldValidator>
+     </div>
+       
+    <div class="adminEnter" runat="server">
+        <asp:Label ID="lblWidth" runat="server" Text="Width:"></asp:Label>
+    </div>
+    <div class="adminEnter" runat="server">
      <asp:TextBox ID="txtWidth" runat="server"></asp:TextBox>
-    <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" />
+    <asp:RequiredFieldValidator ID="ValWidth" runat="server" ErrorMessage="Error, please insert the image width. Ensuring you enter just the number." ClientIDMode="Inherit" ControlToValidate="txtWidth"></asp:RequiredFieldValidator>
+    </div>
+        <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" />
+
+    
+     <p>View the current list of products below which are linked to the current database system.</p>
+    
 
     <asp:GridView ID="gviewProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="AdminProducts">
         <Columns>
@@ -78,8 +132,11 @@
              <asp:Parameter Name="original_Width" Type="Int32" />
          </UpdateParameters>
      </asp:SqlDataSource>
+
+
+    <!--
      <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DropDownListDataSource" DataTextField="ProductName" DataValueField="Id">
      </asp:DropDownList>
      <asp:SqlDataSource ID="DropDownListDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Items]"></asp:SqlDataSource>
-     <asp:FileUpload ID="FileUpload1" runat="server" />
+     <asp:FileUpload ID="FileUpload1" runat="server" /> -->
 </asp:Content>

@@ -16,38 +16,52 @@ namespace CO5027.Admin
 
         protected void btnAdminAdd_Click(object sender, EventArgs e)
         {
-       
-           Product entry = new Product();
-            entry.ProductName = txtName.Text;
-            entry.Description = txtDescription.Text;
-            
-            entry.Price = float.Parse(txtPrice.Text);
-            entry.AltTxt = txtAltTxt.Text;
-            entry.Stock = int.Parse(txtStock.Text);
-            entry.Height = int.Parse(txtHeight.Text);
-            entry.Width = int.Parse(txtWidth.Text);
 
 
-            db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
-            //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();
+            Page.Validate();
+            if (Page.IsValid)
+            {
+
+                Product entry = new Product();
+                entry.ProductName = txtName.Text;
+                entry.Description = txtDescription.Text;
+
+                entry.Price = float.Parse(txtPrice.Text);
+                entry.AltTxt = txtAltTxt.Text;
+                entry.Stock = int.Parse(txtStock.Text);
+                entry.Height = int.Parse(txtHeight.Text);
+                entry.Width = int.Parse(txtWidth.Text);
 
 
-            db.Products.Add(entry);
-db.SaveChanges();
+                db_1404159_WebsiteAssignmentEntities db = new db_1404159_WebsiteAssignmentEntities();
+                //db_1404159_WebsiteAssignment db = new db_1404159_WebsiteAssignment();
 
 
-           string Id = entry.Id.ToString();
+                db.Products.Add(entry);
+                db.SaveChanges();
 
-           string filename = Id + ".jpg";
-           string saveLocation = Server.MapPath("~/ProductImages/" + filename);
 
-            
+                string Id = entry.Id.ToString();
 
-            
-            FileUpload.SaveAs(saveLocation);
-            
+                string filename = Id + ".jpg";
+                string saveLocation = Server.MapPath("~/ProductImages/" + filename);
+
+
+
+
+                FileUpload.SaveAs(saveLocation);
+
+                txtName.Text = "";
+                txtDescription.Text = "";
+                txtPrice.Text = "";
+                FileUpload.Attributes.Clear();
+                txtAltTxt.Text = "";
+                txtStock.Text = "";
+                txtHeight.Text = "";
+                txtWidth.Text = "";
+
+            }
+
         }
-
-        
     }
 }
