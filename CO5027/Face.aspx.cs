@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PayPal.Api;
 
 namespace CO5027
 {
@@ -13,5 +14,20 @@ namespace CO5027
         {
 
         }
+
+        protected void rptrContent_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+
+        }
+
+        protected void btnEasy_Click(object sender, EventArgs e)
+        {
+        }
+
+        protected void btnEasy_Click1(object sender, EventArgs e)
+        {
+        }
+
     }
 }

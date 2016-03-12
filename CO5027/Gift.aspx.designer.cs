@@ -31,30 +31,21 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.DropDownList dlistSort;
         
         /// <summary>
-        /// btnPumpPurchase control.
+        /// rptGift control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPumpPurchase;
+        protected global::System.Web.UI.WebControls.Repeater rptGift;
         
         /// <summary>
-        /// btnComplexionPurchase control.
+        /// DataSourceGifts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnComplexionPurchase;
-        
-        /// <summary>
-        /// btnBronzePurchase control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBronzePurchase;
+        protected global::System.Web.UI.WebControls.SqlDataSource DataSourceGifts;
     }
 }

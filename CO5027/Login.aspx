@@ -4,15 +4,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>Welcome</h2>  
-    <p>Sign in to your current account or create a new one if this is your first time visiting below!<asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+    <p>Sign in to your current account or create a new one if this is your first time visiting below!</p>
+        <asp:Login ID="lgnCredentials" runat="server" CssClass="login">
+        </asp:Login>
+
+        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" >
         <WizardSteps>
             <asp:CreateUserWizardStep runat="server" />
             <asp:CompleteWizardStep runat="server" />
         </WizardSteps>
         </asp:CreateUserWizard>
-        <asp:Login ID="lgnCredentials" runat="server">
-        </asp:Login>
-    </p>
+
+        
+        
+    
     
   
          

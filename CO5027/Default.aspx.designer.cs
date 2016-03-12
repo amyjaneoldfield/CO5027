@@ -22,6 +22,24 @@ namespace CO5027 {
         protected global::System.Web.UI.WebControls.Repeater rptrHome;
         
         /// <summary>
+        /// dListQuant control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dListQuant;
+        
+        /// <summary>
+        /// btnEasy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEasy;
+        
+        /// <summary>
         /// dataSourceHome control.
         /// </summary>
         /// <remarks>

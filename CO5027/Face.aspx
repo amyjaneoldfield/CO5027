@@ -17,21 +17,25 @@
     </p>
 
 
-    <asp:Repeater ID="rptrContent" runat="server" DataSourceID="DataSourceProducts">
+    <asp:Repeater ID="rptrContent" runat="server" DataSourceID="DataSourceProducts" OnItemCommand="rptrContent_ItemCommand">
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
-
+ 
             <div class="face">
                <img src="ProductImages/<%# Eval("Id") %>.jpg"  alt="<%#Eval("AltTxt") %>" width="<%#Eval("Width") %>" height="<%#Eval("Height") %>"/>
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
+                <p>Quantity avalible <%# Eval("Stock") %></p>
                 <h3>£<%# Eval("Price") %></h3>
+             
+        
                 <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />
                 <!--   <asp:Button CommandArgument="" -->
             </div>
         </ItemTemplate>
         <FooterTemplate></FooterTemplate>
     </asp:Repeater>
+   
     
     <asp:SqlDataSource ID="DataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE (([Id] &gt;= @Id) AND ([Id] &lt;= @Id2))">
         <SelectParameters>

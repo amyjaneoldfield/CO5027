@@ -22,6 +22,7 @@
                 <img src="ProductImages/<%# Eval("Id") %>.jpg"  alt="<%#Eval("AltTxt") %>" width="<%#Eval("Width") %>" height="<%#Eval("Height") %>"/>
                 <h3><%# Eval("ProductName") %></h3>
                 <p><%# Eval("Description") %></p>
+                <p>Quantity avalible <%# Eval("Stock") %></p>
                 <h3>£<%# Eval("Price") %></h3>
                
                 <asp:Button ID="btnEasy" runat="server" Text="Purchase" CssClass="btn" />

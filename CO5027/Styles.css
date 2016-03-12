@@ -13,8 +13,12 @@ body{
         color: #F17877;     
     }
 
- .button{
-     color: #F17877; 
+ .btn{
+      background-color: #d8d8d8;
+      color: #F17877;
+     
+   
+     
  }
 
  /*ALL of below for search box doesnt work yet*/
@@ -110,7 +114,6 @@ div#slider figure {
   animation: 40s slidy infinite; 
 }/*Size / speed*/
 
-
 .button{
     background:transparent;
     border:0;
@@ -122,36 +125,11 @@ div#slider figure {
 
 /*ALL CSS FOR Gift Page*/
 
-#party{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 500px;
-    float: left;
-}
-
-#complexion{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 500px;
-    margin-left: 10px;
-}
 
 .Offer{
     text-decoration: line-through;
 }
 
-#bronze{
-    display:inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px;
-    height: 500px;
-    margin-right: 20px;
-}
 
 /*CSS FOR Face page*/
 .face{
@@ -159,121 +137,23 @@ div#slider figure {
     text-align: center;
     border: 1px solid #F17877;
     width: 300px; 
-    height: 450px;
+    height: 500px;
     vertical-align: top;
 }
 
-#foundation{
+.homePurchase{
     display: inline-block;
     text-align: center;
-    border: 1px solid #F17877;
+    border:1px solid white;
     width: 300px; 
     height: 450px;
-    float: left;
-}
-
-#easy{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    margin-left: 10px;
-}
-
-#Gorg{
-    display:inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px;
-    height: 450px;
-    margin-right: 20px;
+   vertical-align: top;
 }
  /*CSS for face line two of images*/
-#hoola{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    float: left;
-}
-
-#fine{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    margin-left: 10px;
-}
-
-#watts{
-    display:inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px;
-    height: 450px;
-    margin-right: 20px;
-}
 
 /*CSS FOR Eye page*/
 
-#roller{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    float: left;
-}
-
-#real{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    margin-left: 10px;
-}
-
-#brow{
-    display:inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px;
-    height: 450px;
-    margin-right: 20px;
-}
-
 /*CSS FOR Eye row two*/
-
-#lash{
-display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    float: left;
-}
-
-#liner{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px; 
-    height: 450px;
-    margin-left: 10px;
-}
-
-#shadow{
-    display:inline-block;
-    text-align: center;
-    border: 1px solid #F17877;
-    width: 300px;
-    height: 450px;
-    margin-right: 20px;
-}
 
 /*CSS FOR Shopping Bag delivery*/
 
@@ -289,36 +169,15 @@ display: inline-block;
     width: 900px;
 }
 
-#adminTable{
-    width: 500px;
-    float: left;
-    vertical-align: top;
-}
-
-#adminTable th{
-    border: 1px solid #F17877;
-    vertical-align: top;
-}
-
-#adminAdd{
-    float: right;
-    display:inline-block;
-    width: 300px;
-    vertical-align: top;
-}
 
 /*CSS FOR LOGIN PAGE*/
-#login{
-    border: 1px solid #F17877;
-    width: 200px;
+.login{
     float: right;
-} /*For users to login*/
+   
+}
 
-#signup{
-    border: 1px solid #F17877;
-    width: 400px;
-    float: left;
-}/*For users to signup*/
+/*For users to signup*/
+
 
  /*CSS For Contact page*/
 #email{
@@ -332,13 +191,19 @@ display: inline-block;
     float: right;
 } /*For Address/telephone on contact page to position*/
 
-
-
 #location {
     text-align: center;
     bottom: auto;
 } /*for map image*/
-
+  
+    #map{
+        height: 48px;
+        width: 260px;
+        margin: 0px auto;
+        padding: 230px;
+        height: auto !important;
+      
+    } 
 
 /*end of contact page*/
 
@@ -476,13 +341,5 @@ font-family: "Varela", sans-serif;
 
 
 
-    #map{
-        height: 48px;
-        width: 260px;
-        margin: 0px auto;
-        padding: 230px;
-        height: auto !important;
-      
-    } 
 
     

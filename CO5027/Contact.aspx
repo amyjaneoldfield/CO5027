@@ -48,15 +48,12 @@
 
     
 
-    <asp:Button ID="btnSend" runat="server" ForeColor="#F17877" OnClick="btnSend_Click" Text="Send" />
-
-        
+    <asp:Button ID="btnSend" runat="server" CssClass="btn" OnClick="btnSend_Click"  Text="Send" />
+        <!--style="height: 26px"-->
+           
         <asp:Literal ID="LitSuccess" runat="server"></asp:Literal>
 
-        
-        <div id="Divemailed" runat="server" visible="false">
-    <p>Email successfully sent!</p>
-    </div></div>
+       </div>
 
     <div id="location">
         <!-- start for map -->
@@ -66,8 +63,8 @@
     </script>
          
         <!--- end for map -->
-        
-        <div id="map">  
+       
+        <div id="map">   <!--still image map -->
    <img src="Images/map.png" alt="Benefit cosmetics store location on Google Maps, 
        located on Pool Lane which can be accessed from the A5117 road after you turn off the M56." width="560" height="448" /> </div>
     </div>

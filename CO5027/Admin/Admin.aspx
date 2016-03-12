@@ -75,7 +75,10 @@
      <asp:TextBox ID="txtWidth" runat="server"></asp:TextBox>
     <asp:RequiredFieldValidator ID="ValWidth" runat="server" ErrorMessage="Error, please insert the image width. Ensuring you enter just the number." ClientIDMode="Inherit" ControlToValidate="txtWidth"></asp:RequiredFieldValidator>
     </div>
-        <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" />
+        <asp:Button ID="btnAdminAdd" runat="server"  Text="Add" OnClick="btnAdminAdd_Click" CssClass="btn"/>
+
+    
+     <asp:Literal ID="litAdd" runat="server"></asp:Literal>
 
     
      <p>View the current list of products below which are linked to the current database system.</p>
@@ -133,10 +136,4 @@
          </UpdateParameters>
      </asp:SqlDataSource>
 
-
-    <!--
-     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DropDownListDataSource" DataTextField="ProductName" DataValueField="Id">
-     </asp:DropDownList>
-     <asp:SqlDataSource ID="DropDownListDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1404159_WebsiteAssignmentConnectionString %>" SelectCommand="SELECT * FROM [Items]"></asp:SqlDataSource>
-     <asp:FileUpload ID="FileUpload1" runat="server" /> -->
 </asp:Content>

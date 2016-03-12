@@ -60,6 +60,8 @@ namespace CO5027.Admin
                 txtHeight.Text = "";
                 txtWidth.Text = "";
 
+                litAdd.Text = "Product saved to database! Refresh the page to see it in the database below.";
+
             }
 
         }

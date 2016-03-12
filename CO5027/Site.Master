@@ -62,7 +62,7 @@
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
       <input type="search" id="txtOffers" placeholder="Enter your email for offers..." style="color: #F17877" />
-      <asp:Button ID="btnSubmit" runat="server" Text="Submit" ForeColor="#F17877" /> </div>
+      <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" /> </div>
         </div>
   </div>
 

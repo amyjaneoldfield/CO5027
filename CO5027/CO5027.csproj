@@ -56,6 +56,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPal, Version=1.7.3.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.7.3\lib\net451\PayPal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -85,32 +93,18 @@
     <Content Include="Global.asax" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner2.png" />
-    <Content Include="Images\bigeasy.jpe" />
-    <Content Include="Images\bronze.jpg" />
-    <Content Include="Images\brow.png" />
     <Content Include="Images\cart.jpg" />
-    <Content Include="Images\complexion.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\fav.jpg" />
-    <Content Include="Images\fine.jpg" />
-    <Content Include="Images\foundation.png" />
-    <Content Include="Images\gorg.JPG" />
-    <Content Include="Images\hoola.jpg" />
     <Content Include="Images\instagram.png" />
-    <Content Include="Images\lash.jpg" />
-    <Content Include="Images\liner.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\map.png" />
     <Content Include="Images\mastercard.png" />
     <Content Include="Images\new.jpg" />
-    <Content Include="Images\party.png" />
     <Content Include="Images\paypal.png" />
-    <Content Include="Images\real.jpg" />
-    <Content Include="Images\roller.jpe" />
     <Content Include="Images\style.jpg" />
     <Content Include="Images\twitter.png" />
     <Content Include="Images\visa.png" />
-    <Content Include="Images\watts.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -127,6 +121,11 @@
     <Content Include="ProductImages\1010.jpg" />
     <Content Include="ProductImages\1011.jpg" />
     <Content Include="ProductImages\1012.jpg" />
+    <Content Include="ProductImages\1013.jpg" />
+    <Content Include="ProductImages\1014.jpg" />
+    <Content Include="ProductImages\1015.jpg" />
+    <Content Include="ProductImages\1016.jpg" />
+    <Content Include="ProductImages\1017.jpg" />
     <Content Include="ProductImages\11.jpg" />
     <Content Include="ProductImages\12.jpg" />
     <Content Include="ProductImages\13.jpg" />
