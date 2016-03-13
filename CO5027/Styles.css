@@ -252,6 +252,10 @@ div#slider figure {
    /*For users to signup*/
 }
 
+.adminTable, td, tr{
+    
+    border:1px solid black;
+}
  /*CSS For Contact page*/
 #email{
     border: 1px solid black;

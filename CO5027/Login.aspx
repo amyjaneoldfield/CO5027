@@ -8,7 +8,7 @@
         <asp:Login ID="lgnCredentials" runat="server" CssClass="login">
         </asp:Login>
 
-        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" >
+        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" CellPadding="-1" CellSpacing="-1" >
         <WizardSteps>
             <asp:CreateUserWizardStep runat="server" />
             <asp:CompleteWizardStep runat="server" />

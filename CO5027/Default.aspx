@@ -15,7 +15,7 @@
     <a href="~/Face.aspx" runat="server"><p class="discover">discover</p></a>
 
 <div class="homePurchase">
-    <asp:Repeater ID="rptrHome" runat="server" DataSourceID="dataSourceHome">
+    <asp:Repeater ID="rptrHome" runat="server" DataSourceID="dataSourceHome" OnItemCommand="rptrHome_ItemCommand">
     <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>        
                <img src="ProductImages/<%# Eval("Id") %>.jpg"  alt="<%#Eval("AltTxt") %>" width="<%#Eval("Width") %>" height="<%#Eval("Height") %>"/>
