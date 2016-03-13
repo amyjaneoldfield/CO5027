@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using PayPal.Api;
 
 namespace CO5027
 {
@@ -29,5 +28,9 @@ namespace CO5027
         {
         }
 
+        protected void dListFace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -94,6 +94,7 @@
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner2.png" />
     <Content Include="Images\cart.jpg" />
+    <Content Include="Images\discover.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\fav.jpg" />
     <Content Include="Images\instagram.png" />

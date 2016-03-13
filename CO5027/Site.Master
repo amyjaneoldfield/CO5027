@@ -16,10 +16,9 @@
 <body>
     <form id="form1" runat="server">
           <div class="main">
-        
-    <img src="Images/logo.png" alt="Benefit cosmetics logo" width="164" height="63" />
-<a href="ShoppingBag.aspx" class="button">£0.00  <img src ="Images/cart.jpg" alt="Shopping cart image" width="32" height="32" style="width: 32px"/></a>
-              
+       
+             <p class="cart">bag</p>
+             <a href="~/Default.aspx" runat="server"><p class="logo">logo</p></a>
               
                   <asp:LoginName ID="loginUserName" runat="server" CssClass="status" />
                   <asp:LoginStatus ID="loginStatus" runat="server" CssClass="status" />
@@ -61,8 +60,9 @@
         <div class="subscribe">
   <div class="container-1">
       <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="txtOffers" placeholder="Enter your email for offers..." style="color: #F17877" />
-      <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" /> </div>
+     <!-- <asp:TextBox ID="txtOffers" runat="server"></asp:TextBox>-->
+      <input type="search" id="txt_Offers" placeholder="Enter your email for offers..." />
+      <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" OnClick="btnSubmit_Click" /> </div>
         </div>
   </div>
 
@@ -85,18 +85,18 @@
             </div>
             <div id="AccountLinks">
                 <ul>
-              <li><a href="~/ShoppingBag.aspx" runat="server">Shopping Bag</a></li>
-              <li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li></ul>
+              <li><a href="~/Login.aspx" runat="server">Login / Regiester </a></li>
+              <li><a href="~/Default.aspx" runat="server">Home</a></li> </ul>
             </div>
             </div>
         
         </div>
 
 
-        <div id="BottomFooter">
-        <img src="Images/visa.png" alt="Visa credit logo" width="32" height="32" /><!--(Reen, Simple Payment Methods - Visa, 2013)-->
-        <img src="Images/paypal.png" alt="Paypal credit logo" width="32" height="32" /><!--(Reen, Simple Payment Methods - PayPal, 2013)-->
-        <img src="Images/mastercard.png" alt="Mastercard credit logo" width="32" height="32" /><!--(Reen, Simple Payment Methods - Mastercard, 2013)-->
+        <div id="BottomFooter"> 
+        <p class="visa">visa</p><!--(Reen, Simple Payment Methods - Visa, 2013)-->
+        <p class="paypal">paypal</p><!--(Reen, Simple Payment Methods - PayPal, 2013)-->
+        <p class="mastercard">mastercard</p> <!--(Reen, Simple Payment Methods - Mastercard, 2013)-->
         <p>Copyright reserved.</p></div>
 
         <div id="Validate">

@@ -61,7 +61,7 @@ namespace CO5027
             payer.payment_method = "paypal";
 
             var redirectUrls = new RedirectUrls();
-            redirectUrls.cancel_url = "http://localhost:2506/Cancel.aspx";
+            redirectUrls.cancel_url = "http://localhost:2506/Default.aspx";
             redirectUrls.return_url = "http://localhost:2506/CompletePurchase.aspx";
 
             var payment = Payment.Create(apiContext, new Payment
@@ -82,6 +82,27 @@ namespace CO5027
                 }
             }
 
+
+            //implementing completed
+       
+            var paymentId = Session["paymentId"].ToString();
+
+            if (!String.IsNullOrEmpty(paymentId))
+            {
+                //create object
+                var Payment = new Payment() { id = paymentId };
+            }
+
+            //retrive
+
+            var payerId = Request.QueryString["PayerID"].ToString();
+            var paymentExecution = new PaymentExecution() { payer_id = payerId };
+
+            //execute
+            var executedPayment = payment.Execute(apiContext, paymentExecution);
+
+            //inform user
+      
         }
     }
 }

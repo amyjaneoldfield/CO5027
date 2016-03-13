@@ -9,16 +9,14 @@ body{
 	font-family:  "Varela", sans-serif; 
 }/*for whole page*/
 
- .status{
-        color: #F17877;     
+ .status{ /*For Login / Logout tab*/
+        color: #F17877;  
+        font-size: 18px;      
     }
 
- .btn{
+ .btn{ /*For button styles*/
       background-color: #d8d8d8;
-      color: #F17877;
-     
-   
-     
+      color: #F17877;     
  }
 
  /*ALL of below for search box doesnt work yet*/
@@ -63,9 +61,6 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
   }
 /*Search box end*/
 
-#logo{
-	margin-top: 20px;
-}/*Position image logo*/
 
  /*START OF CSS FOR nav bar menu*/
 #nav{
@@ -97,7 +92,7 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }/*Responsive when mouse hover over*/
  /*END OF NAV BAR CSS*/
 
- /*CSS FOR Home page slider animation*/
+ /*CSS FOR Home page  && slider animation*/
 @keyframes slidy {
 0% { left: 0%; }
 50% { left: -100%; }
@@ -114,22 +109,113 @@ div#slider figure {
   animation: 40s slidy infinite; 
 }/*Size / speed*/
 
-.button{
-    background:transparent;
-    border:0;
+ .banner1{ /*image css for decorative banner 1*/
+     display: inline-block;
+    width: 960px;
+    height: 320px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/banner.jpg)
+    /*alt="Banner image displaying gift sets"*/
+ }
+
+ .banner2{ /*css for image banner 2 decorative picture*/
+     display: inline-block;
+    width: 960px;
+    height: 320px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/banner2.png)
+    /*alt=""Banner image displaying products"*/
+ }
+
+ .styleImg{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/style.jpg)
+    /*alt="Style image displaying products"*/
+ }
+
+ .mascaraImg{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/new.jpg)
+    /*alt="Style image displaying products"*/
+ }
+
+ .variousImg{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/fav.jpg)
+    /*alt="Style image displaying products"*/
+ }
+
+ .discover{
     float: right;
-    padding-right: 32px;
-    color: #F17877;
-    
-} /*For cart button at top right page*/
+    display: inline-block;
+    width: 600px;
+    height: 400px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/discover.jpg)
+ }
 
-/*ALL CSS FOR Gift Page*/
+  .cart{ /*for shopping bag logo, decorative image*/
+    float: right;
+    margin-top: 5px;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/cart.jpg)
+    /*alt="Benefit cosmetics logo"*/
+  }
 
-
-.Offer{
-    text-decoration: line-through;
+.visa{ /*for visa logo decorative image*/
+    float:left;
+    display: inline;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/visa.png)
+    /*alt=Visa credit logo*/
 }
 
+.paypal{ /*for paypal logo image decorative*/
+    float: left;
+    display: inline;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/paypal.png)
+    /*alt="Paypal credit logo*/
+}
+
+.mastercard{ /*for mastercard logo decorative image*/
+    float: left;
+    display: inline;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/mastercard.png)
+    /*alt=Mastercard credit logo*/
+}
 
 /*CSS FOR Face page*/
 .face{
@@ -142,24 +228,13 @@ div#slider figure {
 }
 
 .homePurchase{
+    float: left;
     display: inline-block;
     text-align: center;
     border:1px solid white;
     width: 300px; 
     height: 450px;
    vertical-align: top;
-}
- /*CSS for face line two of images*/
-
-/*CSS FOR Eye page*/
-
-/*CSS FOR Eye row two*/
-
-/*CSS FOR Shopping Bag delivery*/
-
-#posting{
-    float: right;
-    
 }
 
 /*CSS For Admin page*/
@@ -173,11 +248,8 @@ div#slider figure {
 /*CSS FOR LOGIN PAGE*/
 .login{
     float: right;
-   
+   /*For users to signup*/
 }
-
-/*For users to signup*/
-
 
  /*CSS For Contact page*/
 #email{
@@ -338,6 +410,16 @@ font-family: "Varela", sans-serif;
      margin-top: 180px;
       
   } /*For validator links/text positioning*/
+  
+.logo{ /*logo image*/
+    text-decoration: none;
+    width: 164px;
+    height: 63px;
+    text-indent:-9999px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(Images/logo.png)
+    /*alt="Benefit cosmetics logo"*/
+}
 
 
 

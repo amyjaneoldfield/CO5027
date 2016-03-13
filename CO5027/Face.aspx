@@ -8,7 +8,7 @@
     <p>This page has all products you would need to use on your face for that perfect glamour look.</p>
     <p>
         <asp:Label ID="lblSortFace" runat="server" AssociatedControlID="dListFace" Text="Sort:"></asp:Label>
-        <asp:DropDownList ID="dListFace" runat="server" ForeColor="#F17877">
+        <asp:DropDownList ID="dListFace" runat="server" ForeColor="#F17877" OnSelectedIndexChanged="dListFace_SelectedIndexChanged">
             <asp:ListItem>Most popular</asp:ListItem>
             <asp:ListItem>Newest</asp:ListItem>
             <asp:ListItem>Price ASC</asp:ListItem>
