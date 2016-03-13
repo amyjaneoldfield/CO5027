@@ -164,7 +164,7 @@ div#slider figure {
     display: inline-block;
     width: 600px;
     height: 400px;
-    color: #F17877;
+    color: black;
     text-indent:-9999px;
     background-repeat: no-repeat, repeat;
     background-image: url(Images/discover.jpg)
@@ -417,7 +417,7 @@ font-family: "Varela", sans-serif;
     width: 164px;
     height: 63px;
     text-indent:-9999px;
-    color: #F17877;
+    color: black;
     background-repeat: no-repeat, repeat;
     background-image: url(Images/logo.png)
     /*alt="Benefit cosmetics logo"*/
