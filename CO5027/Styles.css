@@ -37,7 +37,7 @@ body{
   height: 30px;
   background: black;
   border: none;
-  font-size: 10pt;
+  font-size: 12pt;
   
   color: white;
   padding-left: 45px;
@@ -399,7 +399,7 @@ font-family: "Varela", sans-serif;
 #BottomFooter{
     text-align: center;
     margin-top: 180px;
-    font-size: 10px;
+    font-size: 12px;
     
     position: absolute;
 } /*For copyright & paying images*/

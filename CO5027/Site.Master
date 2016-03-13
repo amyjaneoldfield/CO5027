@@ -26,7 +26,7 @@
 
       <div class="box">
          <div class="container-1">
-         <span class="icon"><i class="fa fa-search"></i></span>
+         <span class="icon"><em class="fa fa-search"></em></span>
          <input type="search" id="search" placeholder="Search..." />
          </div>
   </div>
@@ -59,7 +59,7 @@
           
         <div class="subscribe">
   <div class="container-1">
-      <span class="icon"><i class="fa fa-search"></i></span>
+      <span class="icon"><em class="fa fa-search"></em></span>
      <!-- <asp:TextBox ID="txtOffers" runat="server"></asp:TextBox>-->
       <input type="search" id="txt_Offers" placeholder="Enter your email for offers..." />
       <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" OnClick="btnSubmit_Click" /> </div>
