@@ -5,18 +5,18 @@
 
 body{
     background-color: white;
-    color: #F17877;
+    color: black;
 	font-family:  "Varela", sans-serif; 
 }/*for whole page*/
 
  .status{ /*For Login / Logout tab*/
-        color: #F17877;  
+        color: black;  
         font-size: 18px;      
     }
 
  .btn{ /*For button styles*/
       background-color: #d8d8d8;
-      color: #F17877;     
+      color: black;     
  }
 
  /*ALL of below for search box doesnt work yet*/
@@ -35,7 +35,7 @@ body{
 .container-1 input#search{
   width: 200px;
   height: 30px;
-  background: #F17877;
+  background: black;
   border: none;
   font-size: 10pt;
   
@@ -52,12 +52,12 @@ body{
 
 .container-1 .icon{
   z-index: 1;
-  color: #F17877;
+  color: black;
 }
 
 container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
     outline:none;
-    background: #F17877;
+    background: black;
   }
 /*Search box end*/
 
@@ -66,7 +66,7 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 #nav{
 	padding-bottom: 10px;
     margin-top: 30px;
-    background-color: #F17877;
+    background-color: black;
 	}/*Measurements*/
 
 #nav ul {
@@ -88,7 +88,7 @@ container-1 input#search:hover, .container-1 input#search:focus, .container-1 in
 }/*Text details*/
 
 #nav ul li a:hover {
-	color: black;
+	color: #F17877;
 }/*Responsive when mouse hover over*/
  /*END OF NAV BAR CSS*/
 
@@ -221,7 +221,7 @@ div#slider figure {
 .face{
     display: inline-block;
     text-align: center;
-    border: 1px solid #F17877;
+    border: 1px solid black;
     width: 300px; 
     height: 500px;
     vertical-align: top;
@@ -253,7 +253,7 @@ div#slider figure {
 
  /*CSS For Contact page*/
 #email{
-    border: 1px solid #F17877;
+    border: 1px solid black;
     width: 200px;
     float: left;
 }/*For conact forms*/
@@ -285,7 +285,7 @@ div#slider figure {
 footer{
 width: 960px; /* it was width: auto check it looks correct*/
 height: 250px;
-background-color: #F17877;
+background-color: black;
 margin-top: auto;
 color: white;
 
@@ -338,7 +338,7 @@ div.subscribe{
 }
 
 .links ul li a:hover {    
-	color: black;
+	color: #F17877;
 }
 
 #links{
@@ -361,7 +361,7 @@ font-size: 12px;
 }/*styling*/
 
     #HelpLinks ul li a:hover {
-        color: black;
+        color: #F17877;
     }
 #HelpLinks ul {
     list-style-type: none;
@@ -387,7 +387,7 @@ font-family: "Varela", sans-serif;
 }/*style*/
 
 #AccountLinks ul li a:hover {
-        color: black;
+        color: #F17877;
     }
 
 #AccountLinks ul {
