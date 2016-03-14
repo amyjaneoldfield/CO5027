@@ -33,7 +33,7 @@
 
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" CellPadding="-1" CellSpacing="-1" CssClass="createUser">
         <WizardSteps>
-            <asp:CreateUserWizardStep runat="server" >
+            <asp:CreateUserWizardStep runat="server" EnableTheming="False" >
                 <ContentTemplate>
                  
                           <div class="createUser" runat="server">
@@ -104,7 +104,7 @@
                           
                 </CustomNavigationTemplate>
             </asp:CreateUserWizardStep>
-            <asp:CompleteWizardStep runat="server" >
+            <asp:CompleteWizardStep runat="server" EnableTheming="False" >
                 <ContentTemplate>
                     
                                 <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" Text="Continue" ValidationGroup="CreateUserWizard1" />
