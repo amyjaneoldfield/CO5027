@@ -33,7 +33,13 @@
 
     <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" CellPadding="-1" CellSpacing="-1" >
         <WizardSteps>
-            <asp:CreateUserWizardStep runat="server" />
+            <asp:CreateUserWizardStep runat="server" >
+                <CustomNavigationTemplate>
+                    
+                                <asp:Button ID="StepNextButton" runat="server" CommandName="MoveNext" Text="Create User" ValidationGroup="CreateUserWizard1" />
+                          
+                </CustomNavigationTemplate>
+            </asp:CreateUserWizardStep>
             <asp:CompleteWizardStep runat="server" />
         </WizardSteps>
     </asp:CreateUserWizard>
