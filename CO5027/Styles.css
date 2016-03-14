@@ -249,6 +249,8 @@ div#slider figure {
 /*CSS FOR LOGIN PAGE*/
 .login{
     float: right;
+   
+    width: 300px;
    /*For users to signup*/
 }
 

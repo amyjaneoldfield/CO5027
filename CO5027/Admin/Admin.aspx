@@ -84,7 +84,7 @@
      <p>View the current list of products below which are linked to the current database system.</p>
     
 
-    <asp:GridView ID="gviewProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="AdminProducts" gridlines="None" CssClass="adminTable">
+    <asp:GridView ID="gviewProducts" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="AdminProducts" gridlines="None" CssClass="adminTable" CellPadding="-1" CellSpacing="-1" >
         <Columns>
             <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
