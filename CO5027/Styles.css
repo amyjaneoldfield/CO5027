@@ -1,12 +1,17 @@
 ﻿.main{
     width: 960px;
 	margin: 0 auto;
+    
+   
 }/*set for whole page*/
 
 body{
     background-color: white;
     color: black;
 	font-family:  "Varela", sans-serif; 
+    min-height: 100%;
+   
+   
 }/*for whole page*/
 
  .status{ /*For Login / Logout tab*/
@@ -248,10 +253,24 @@ div#slider figure {
 
 /*CSS FOR LOGIN PAGE*/
 .login{
+     display: inline-block;
     float: right;
-   
     width: 300px;
    /*For users to signup*/
+}
+
+
+
+div#push {
+clear: both;
+}
+
+.createUser{ 
+    display: inline-block;
+    float: left;
+    width: 300px;
+    
+
 }
 
 .adminTable, td, tr{
